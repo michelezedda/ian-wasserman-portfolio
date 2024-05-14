@@ -1,0 +1,46 @@
+@import "config";
+
+@import "../../styles/config";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 120px 0;
+  .about {
+    text-align: center;
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+    img {
+      width: 165px;
+    }
+  }
+  button {
+    border: 2px solid $green-color;
+    background-color: $green-color;
+    color: $primary-color;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    &:hover {
+      border: 2px solid $pink-color;
+      background-color: $pink-color;
+      color: $primary-color;
+      cursor: pointer;
+      box-shadow: 0 0 10px $pink-color;
+      transition: background-color 0.3s ease;
+    }
+  }
+}
+
+// MEDIA QUERIES //
+@media screen and (max-width: 800px) {
+}

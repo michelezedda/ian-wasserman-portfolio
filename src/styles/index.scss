@@ -1,0 +1,39 @@
+@import "config";
+
+html,
+body {
+  font-family: $font-stack;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  background-color: $bg-color;
+  margin: 0;
+  padding: 0;
+  color: $black-color;
+}
+.container {
+  margin: 0 auto;
+  max-width: 65rem;
+  padding: 0 4rem;
+
+  // MEDIA QUERIES //
+  @media screen and (max-width: 800px) {
+    html,
+    body {
+      font-family: $font-stack;
+      line-height: 1.5;
+      font-weight: 400;
+      text-rendering: optimizeLegibility;
+      box-sizing: border-box;
+      background-color: $bg-color;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 65rem;
+      padding: 0 10px;
+    }
+  }
+}
