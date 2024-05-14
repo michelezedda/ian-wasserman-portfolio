@@ -1,7 +1,6 @@
 import "./notfoundpage.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import notfoundpagePic from "/404.png";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 
@@ -23,7 +22,6 @@ function NotFoundPage() {
           <h2>
             Page not found! Even our servers are practicing social distancing.
           </h2>
-          <img src={notfoundpagePic} />
         </div>
       </div>
       <Footer />
