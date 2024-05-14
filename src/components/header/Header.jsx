@@ -1,5 +1,6 @@
 import "./header.css";
 import { Link } from "react-router-dom";
+import satellitePic from "/satellite.png";
 
 function Header() {
   return (
@@ -26,6 +27,7 @@ function Header() {
               <button>Button</button>
             </Link>
           </div>
+          <img src={satellitePic} />
         </div>
       </div>
     </>
