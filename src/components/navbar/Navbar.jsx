@@ -6,11 +6,27 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div className="logo-container">
-          <Link to="/">
-            <img src={myLogo} />
-          </Link>
-        </div>
+        <Link to="/">
+          <img src={myLogo} />
+        </Link>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn">
+          <span className="nav-icon"></span>
+        </label>
+        <ul className="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Education</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">PLA</a>
+          </li>
+        </ul>
       </nav>
     </>
   );
