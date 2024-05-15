@@ -1,10 +1,10 @@
-import "./notfoundpage.css";
+import "./education.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 
-function NotFoundPage() {
+function Education() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,15 +13,13 @@ function NotFoundPage() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Ian Wasserman Portfolio - Page not found</title>
+        <title>Ian Wasserman Portfolio - Education</title>
         <link rel="canonical" href="https://ianwasserman.netlify.app/" />
       </Helmet>
       <Navbar />
-      <div className="notfoundpage">
+      <div className="education">
         <div className="container">
-          <h2>
-            Page not found! Even our servers are practicing social distancing.
-          </h2>
+          <h2>EDUCATION</h2>
         </div>
       </div>
       <Footer />
@@ -29,4 +27,4 @@ function NotFoundPage() {
   );
 }
 
-export default NotFoundPage;
+export default Education;

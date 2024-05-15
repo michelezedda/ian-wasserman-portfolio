@@ -30,14 +30,9 @@ nav {
     font-size: 20px;
     position: relative;
     &:hover {
-      text-decoration-style: solid;
-      text-decoration-thickness: auto;
-      transition-behavior: normal;
-      transition-delay: 0s;
-      transition-duration: 0.23s;
-      transition-property: all;
-      transition-timing-function: ease;
+      transition: 0.2s ease-in-out;
       color: $blue-color;
+      font-weight: bold;
       cursor: pointer;
     }
   }

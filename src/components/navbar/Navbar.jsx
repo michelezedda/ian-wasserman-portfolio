@@ -6,25 +6,31 @@ function Navbar() {
   return (
     <>
       <nav>
-        <Link to="/">
-          <img src={myLogo} />
-        </Link>
+        <img src={myLogo} />
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="nav-icon"></span>
         </label>
         <ul className="menu">
           <li>
-            <a href="#">Home</a>
+            <Link to="/">
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Education</a>
+            <Link to="/education">
+              <a>Education</a>
+            </Link>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <Link to="/projects">
+              <a>Projects</a>
+            </Link>
           </li>
           <li>
-            <a href="#">PLA</a>
+            <Link to="/pla">
+              <a>PLA</a>
+            </Link>
           </li>
         </ul>
       </nav>

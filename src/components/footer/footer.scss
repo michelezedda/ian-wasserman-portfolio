@@ -7,8 +7,8 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   flex-shrink: 0;
-  background-color: rgba($blue-color, 0.8);
-  color: $primary-color;
+  background-color: $primary-color;
+  color: $blue-color;
   text-align: center;
   p {
     font-size: 20px;
@@ -30,7 +30,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     flex-shrink: 0;
-    background-color: rgba($blue-color, 1);
+    background-color: rgba($blue-color, 0.8);
     color: $primary-color;
     text-align: center;
     p {
