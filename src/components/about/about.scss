@@ -3,9 +3,9 @@
 .about {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 0;
-  margin: 120px 0 0 0;
+  padding: 200px 0 0 0;
+  height: 100vh;
   text-align: center;
   background-color: darken($blue-color, 10%);
   color: $primary-color;
@@ -17,20 +17,27 @@
     .left {
       img {
         width: 500px;
+        border-radius: 5px;
+        box-shadow: 0 0 15px lighten($primary-color, 0.9%);
       }
     }
     .right {
       h2 {
-        font-size: 50px;
+        font-size: 60px;
+        text-align: center;
       }
       p {
-        font-size: 25px;
+        font-size: 22px;
         margin-bottom: 30px;
+        text-align: justify;
       }
       .social-medias {
-        font-size: 30px;
+        font-size: 35px;
         span {
           margin-right: 20px;
+          &:hover {
+            color: lighten($blue-color, 40%);
+          }
         }
       }
     }

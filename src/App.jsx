@@ -18,8 +18,8 @@ function App() {
         <link rel="canonical" href="https://ianwasserman.netlify.app/" />
       </Helmet>
       <Navbar />
-      <Header />
       <About />
+      <Header />
       <Footer />
     </>
   );

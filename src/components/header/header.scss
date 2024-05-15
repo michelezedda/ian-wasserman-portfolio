@@ -1,38 +1,58 @@
 @import "../../styles/config";
 
 .header {
+  background-color: lighten($blue-color, 65%);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 120px 0;
-  h1 {
-    font-size: 50px;
-  }
-  p {
-    font-size: 25px;
-    margin-bottom: 30px;
-  }
+  padding: 150px 0 150px 0;
   .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     div {
-      display: grid;
+      position: relative;
       text-align: center;
       border-radius: 5px;
-      margin: 0 20px;
-      padding: 40px 80px;
-      border: 2px solid $blue-color;
+      margin: 0 30px;
+      padding: 150px 150px;
+      border: 3px solid $blue-color;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: filter 0.5s ease;
+      }
       h4 {
-        font-size: 25px;
+        font-size: 35px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        color: $primary-color;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+        transition: all 0.5s ease;
+        width: 100%;
       }
-      p {
-        font-size: 20px;
+      &:hover {
+        img {
+          filter: blur(15px);
+        }
+        h4 {
+          font-weight: bold;
+          font-size: 50px;
+          color: $blue-color;
+          backdrop-filter: blur(1px);
+        }
       }
-    }
-    img {
-      width: 100px;
     }
   }
 }
