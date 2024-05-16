@@ -1,36 +1,50 @@
-import "./navbar.css";
-import myLogo from "/logo.png";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const backgroundHeight =
+        document.querySelector(".navbar-background").offsetHeight;
+      if (scrollTop > backgroundHeight) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav>
-        <img src={myLogo} />
+      <div className="navbar-background"></div>
+      <nav className={isScrolled ? "scrolled" : ""}>
+        <h1>IAN WASSERMAN</h1>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="nav-icon"></span>
         </label>
         <ul className="menu">
           <li>
-            <Link to="/">
-              <a>Home</a>
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/education">
-              <a>Education</a>
-            </Link>
+            <Link to="/education">Education</Link>
           </li>
           <li>
-            <Link to="/projects">
-              <a>Projects</a>
-            </Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <Link to="/pla">
-              <a>PLA</a>
-            </Link>
+            <Link to="/pla">PLA</Link>
           </li>
         </ul>
       </nav>
