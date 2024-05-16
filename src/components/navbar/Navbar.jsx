@@ -10,7 +10,7 @@ function Navbar() {
       const scrollTop = window.scrollY;
       const backgroundHeight =
         document.querySelector(".navbar-background").offsetHeight;
-      if (scrollTop > backgroundHeight) {
+      if (scrollTop > 200) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
