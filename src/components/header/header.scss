@@ -38,13 +38,14 @@
         transform: translate(-50%, -50%);
         color: $primary-color;
         z-index: 1;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(25px);
         transition: all 0.5s ease;
         width: 100%;
       }
       &:hover {
+        background-color: $blue-color;
         img {
-          filter: blur(15px);
+          filter: blur(40px);
         }
         h4 {
           font-weight: bold;
