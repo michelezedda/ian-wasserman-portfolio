@@ -8,8 +8,6 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const backgroundHeight =
-        document.querySelector(".navbar-background").offsetHeight;
       if (scrollTop > 200) {
         setIsScrolled(true);
       } else {
@@ -26,7 +24,12 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar-background"></div>
+      <div className="navbar-background">
+        <h2>
+          IAN WASSERMAN<span></span>
+        </h2>
+        <p>An Ingeneering Portfolio</p>
+      </div>
       <nav className={isScrolled ? "scrolled" : ""}>
         <h1>IAN WASSERMAN</h1>
         <input className="menu-btn" type="checkbox" id="menu-btn" />

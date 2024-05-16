@@ -1,8 +1,5 @@
 import "./about.css";
 import profilePic from "/profile.jpg";
-import { TbMail } from "react-icons/tb";
-import { FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -31,18 +28,6 @@ function About() {
                 mentorship to a team of over 15 thermal engineers. Ian may be
                 contacted at: ian@ianwass.com.
               </p>
-              <div className="social-medias">
-                <Link to="/">
-                  <span>
-                    <TbMail />
-                  </span>
-                </Link>
-                <Link to="/">
-                  <span>
-                    <FaLinkedinIn />
-                  </span>
-                </Link>
-              </div>
             </div>
           </div>
         </div>

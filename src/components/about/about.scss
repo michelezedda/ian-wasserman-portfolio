@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   padding: 0;
-  padding: 400px 0 0 0;
-  height: 100vh;
+  padding: 100px 0 0 0;
+  height: 70vh;
   text-align: center;
   background-color: darken($blue-color, 10%);
   color: $primary-color;
@@ -32,15 +32,6 @@
         font-size: 22px;
         margin-bottom: 30px;
         text-align: justify;
-      }
-      .social-medias {
-        font-size: 35px;
-        span {
-          margin-right: 20px;
-          &:hover {
-            color: lighten($blue-color, 40%);
-          }
-        }
       }
     }
   }
