@@ -20,6 +20,7 @@ function Pla() {
       <div className="pla">
         <div className="container">
           <h2>PLA</h2>
+          <p>ppppppp</p>
         </div>
       </div>
       <Footer />

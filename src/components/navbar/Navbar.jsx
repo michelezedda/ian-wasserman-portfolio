@@ -23,10 +23,8 @@ function Navbar() {
   return (
     <>
       <div className="navbar-background">
-        <h2>
-          IAN WASSERMAN<span></span>
-        </h2>
-        <p>An Ingeneering Portfolio</p>
+        <h2>IAN WASSERMAN</h2>
+        <p>An Engineering Portfolio</p>
       </div>
       <nav className={isScrolled ? "scrolled" : ""}>
         <h1>IAN WASSERMAN</h1>

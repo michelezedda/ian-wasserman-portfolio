@@ -20,6 +20,7 @@ function Projects() {
       <div className="projects">
         <div className="container">
           <h2>PROJECTS</h2>
+          <p>ppppppp</p>
         </div>
       </div>
       <Footer />

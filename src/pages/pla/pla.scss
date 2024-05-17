@@ -1,1 +1,18 @@
 @import "../../styles/config";
+
+.pla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 500px 0 1000px 0;
+  margin: 0;
+  background-color: $bg-color-2;
+  color: $black-color;
+  text-align: center;
+  h2 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 25px;
+  }
+}
