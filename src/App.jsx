@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
-import Socials from "./components/socials/Socials";
+import More from "./components/more/More";
 
 function App() {
   useEffect(() => {
@@ -19,9 +19,9 @@ function App() {
         <link rel="canonical" href="https://ianwasserman.netlify.app/" />
       </Helmet>
       <Navbar />
-      <Socials />
-      <About />
       <Header />
+      <About />
+      <More />
       <Footer />
     </>
   );
