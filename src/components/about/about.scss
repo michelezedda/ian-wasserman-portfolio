@@ -3,9 +3,9 @@
 .about {
   display: flex;
   justify-content: center;
-  padding: 0;
-  padding: 100px 0 0 0;
-  height: 70vh;
+  padding-top: 180px;
+  padding-bottom: 0;
+  height: 55vh;
   text-align: center;
   background-color: darken($blue-color, 10%);
   color: $primary-color;
@@ -23,14 +23,13 @@
     }
     .right {
       h2 {
+        margin: 0;
         font-size: 60px;
         text-align: center;
         font-weight: 300;
-        margin-bottom: 20px;
       }
       p {
         font-size: 22px;
-        margin-bottom: 30px;
         text-align: justify;
       }
     }

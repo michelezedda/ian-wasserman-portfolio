@@ -43,7 +43,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 30vh;
+  height: 38vh;
   background-image: url("/wallpaper.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@ nav {
     text-align: center;
     font-size: 80px;
     font-weight: 200;
-    margin: 100px 0 0 0;
+    margin: 150px 0 0 0;
   }
   p {
     color: $primary-color;
@@ -78,7 +78,7 @@ nav {
   box-shadow: 0 0 10px $blue-color;
   h1 {
     color: $blue-color;
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
     font-weight: 600;
   }

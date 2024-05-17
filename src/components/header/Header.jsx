@@ -1,32 +1,30 @@
 import "./header.css";
+import { TbMail } from "react-icons/tb";
+import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import profilePic from "/profile.jpg";
 
 function Header() {
   return (
     <>
       <div className="header">
         <div className="container">
-          <div className="buttons">
-            <Link to="/education">
+          <div className="social-medias">
+            <h2>Connect with me:</h2>
+            <Link
+              to={`mailto:fesfe@gmail.com`}
+              style={{ textDecoration: "none" }}
+            >
               <div>
-                <img src={profilePic} alt="Education" />
-                <h4>EDUCATION</h4>
-                <p>Undergraduate and Graduate Studies</p>
+                <TbMail className="email" /> Send an email
               </div>
             </Link>
-            <Link to="projects">
+            <Link
+              to="https://www.linkedin.com/in/ianwass/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <div>
-                <img src={profilePic} alt="Projects" />
-                <h4>PROJECTS</h4>
-                <p>Various Technical Endeavors</p>
-              </div>
-            </Link>
-            <Link to="pla">
-              <div>
-                <img src={profilePic} alt="PLA" />
-                <h4>PLA</h4>
-                <p>Presidential Leadership Academy</p>
+                <FaLinkedinIn className="linkedin" /> Go to Linkedin
               </div>
             </Link>
           </div>
