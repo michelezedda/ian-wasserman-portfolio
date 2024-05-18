@@ -1,6 +1,8 @@
 import "./more.css";
 import { Link } from "react-router-dom";
-import profilePic from "/profile.jpg";
+import educationPic from "/education.png";
+import plaPic from "/pla.png";
+import projectsPic from "/projects.png";
 
 function More() {
   return (
@@ -10,19 +12,19 @@ function More() {
           <div className="buttons">
             <Link to="/education">
               <div>
-                <img src={profilePic} alt="Education" />
+                <img src={educationPic} alt="Education" />
                 <h4>EDUCATION</h4>
               </div>
             </Link>
             <Link to="projects">
               <div>
-                <img src={profilePic} alt="Projects" />
+                <img src={projectsPic} alt="Projects" />
                 <h4>PROJECTS</h4>
               </div>
             </Link>
             <Link to="pla">
               <div>
-                <img src={profilePic} alt="PLA" />
+                <img src={plaPic} alt="PLA" />
                 <h4>PLA</h4>
               </div>
             </Link>
