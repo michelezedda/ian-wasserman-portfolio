@@ -83,6 +83,8 @@ function Education() {
                 fuels.
               </p>
               <div className="btn">Go to B.S. Degree Program</div>
+            </div>
+            <div className="div5">
               <h4>COURSE LIST</h4>
               <p>
                 <b>Transfer Credits from High School</b>
