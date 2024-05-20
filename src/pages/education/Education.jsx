@@ -2,12 +2,19 @@ import "./education.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
-import { useEffect } from "react";
+import { SlArrowDown, SlArrowUp } from "react-icons/sl";
+import { useState, useEffect } from "react";
 
 function Education() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <>
@@ -25,7 +32,7 @@ function Education() {
             However, Ian's goal of achieving high levels of academic excellence
             within a short amount of time was proven to be quite successful.
           </p>
-          <div className="split">
+          <div className="first-row">
             <div className="div1">
               <h3>COLLEGE OF EARTH AND MINERAL SCIENCES</h3>
               <h4>MASTER OF SCIENCE: ENERGY AND MINERAL ENGINEERING</h4>
@@ -56,7 +63,7 @@ function Education() {
               <div className="btn">Go to Certificate Program</div>
             </div>
           </div>
-          <div className="right">
+          <div className="second-row">
             <div className="div3">
               <h3>COLLEGE OF ENGINEERING</h3>
               <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
@@ -84,8 +91,13 @@ function Education() {
               </p>
               <div className="btn">Go to B.S. Degree Program</div>
             </div>
-            <div className="div5">
-              <h4>COURSE LIST</h4>
+          </div>
+          <div className="div5" onClick={toggleDropdown}>
+            <h4>
+              COURSE LIST &nbsp;&nbsp;&nbsp;
+              {isDropdownOpen ? <SlArrowUp /> : <SlArrowDown />}
+            </h4>
+            {isDropdownOpen && (
               <p>
                 <b>Transfer Credits from High School</b>
                 <ul>
@@ -184,7 +196,7 @@ function Education() {
                   <li>600 - Thesis Research</li>
                 </ul>
               </p>
-            </div>
+            )}
           </div>
         </div>
       </div>
