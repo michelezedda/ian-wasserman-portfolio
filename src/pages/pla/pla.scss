@@ -2,11 +2,14 @@
 
 .pla {
   display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 100px;
   justify-content: center;
   align-items: center;
-  padding: 500px 0 1000px 0;
+  padding: 500px 0;
   margin: 0;
-  background-color: $bg-color-2;
+  background-color: $bg-color;
   color: $black-color;
   text-align: center;
   h2 {
@@ -15,53 +18,42 @@
   p {
     font-size: 25px;
   }
-  .split {
+  .first-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    .div1 {
+      background-color: lightblue;
+    }
+    .div2 {
+      background-color: pink;
+    }
+  }
+  .second-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    .div3 {
+      background-color: lightcoral;
+    }
+    .div4 {
+      background-color: palegoldenrod;
+    }
+  }
+  .third-row {
+    background-color: beige;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 80px;
-    .left {
-      display: flex;
-      flex-direction: column;
-      h3 {
-        margin: 0;
-        font-size: 40px;
-        text-align: center;
-        font-weight: 300;
-      }
-      h4 {
-        margin: 0;
-        font-size: 30px;
-        text-align: left;
-        font-weight: 300;
-      }
-      p {
-        font-size: 22px;
-        text-align: left;
-      }
-    }
-    .right {
-      display: flex;
-      flex-direction: column;
-      h3 {
-        margin: 0;
-        font-size: 40px;
-        text-align: center;
-        font-weight: 300;
-      }
-      h4 {
-        margin: 0;
-        font-size: 30px;
-        text-align: left;
-        font-weight: 300;
-      }
-      p {
-        font-size: 22px;
-        text-align: left;
-      }
-    }
-    .btn {
-      border: 2px solid $blue-color;
-      margin-top: 20px;
-    }
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .div5 {
+    background-color: lightgreen;
+  }
+  .btn {
+    border: 2px solid $blue-color;
+    margin-top: 20px;
   }
 }
