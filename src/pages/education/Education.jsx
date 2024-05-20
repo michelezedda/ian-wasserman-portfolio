@@ -47,7 +47,6 @@ function Education() {
                 (IUG) program made it so Ian could complete his Master's in only
                 two additional semesters.
               </p>
-              <div className="btn">Go to M.S. Degree Program</div>
             </div>
             <div className="div2">
               <h3>INTRACOLLEGIATE</h3>
@@ -60,7 +59,6 @@ function Education() {
                 conversation, and embrace new cultural experiences through
                 semesterly trips.
               </p>
-              <div className="btn">Go to Certificate Program</div>
             </div>
           </div>
           <div className="second-row">
@@ -76,7 +74,6 @@ function Education() {
                   remediation, waste disposal, air pollution, and energy
                   production.
                 </p>
-                <div className="btn">Go to Minor Degree Program</div>
               </div>
               <div className="div4">
                 <h4>BACHELOR OF SCIENCE: ENERGY ENGINEERING</h4>
@@ -91,7 +88,6 @@ function Education() {
                   about various forms of energy processing and conversion, such
                   as wind, hydro, solar, bio or petroleum-based fuels.
                 </p>
-                <div className="btn">Go to B.S. Degree Program</div>
               </div>
             </div>
           </div>

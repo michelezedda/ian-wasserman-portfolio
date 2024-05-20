@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Projects() {
   useEffect(() => {
@@ -36,9 +37,15 @@ function Projects() {
                 areas of advanced combustion and waste resource recovery, Ian
                 hopes to pave the way for future sustainable power generation.
               </p>
-              <div className="btn">
-                Chemical-looping combustion presentation
-              </div>
+              <Link
+                to="https://onedrive.live.com/view.aspx?resid=1BE0632E5BED2779%2122760&authkey=!AIGax3f3DtLL7u0"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="btn">
+                  Chemical-looping combustion presentation
+                </div>
+              </Link>
             </div>
             <div className="div2">
               <h3>EUROPA CLIPPER SPACECRAFT</h3>
@@ -56,9 +63,15 @@ function Projects() {
                 mission. He also got to work under Jenny Hua, who is an amazing
                 mentor!
               </p>
-              <div className="btn">
-                Europa Clipper thermal engineering presentation
-              </div>
+              <Link
+                to="https://onedrive.live.com/view.aspx?resid=1BE0632E5BED2779%2117917&authkey=!AI8NWBljNR79lS8"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="btn">
+                  Europa Clipper thermal engineering presentation
+                </div>
+              </Link>
             </div>
           </div>
           <div className="second-row">
@@ -78,7 +91,13 @@ function Projects() {
                 and did not crash once! Ian believes this was the best team
                 project he ever got to work on at Penn State.
               </p>
-              <div className="btn">Eco-marathon vehicle presentation</div>
+              <Link
+                to="https://onedrive.live.com/view.aspx?resid=1BE0632E5BED2779%2122758&authkey=!AHkXPvNWOQo4Fvg"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="btn">Eco-marathon vehicle presentation</div>
+              </Link>
             </div>
             <div className="div4">
               <h3>ENCELADUS CONCEPT MISSION</h3>
@@ -95,7 +114,15 @@ function Projects() {
                 fantastic experience and newly obtained skills allowed Ian to
                 pursue a second internship at JPL for the following summer.
               </p>
-              <div className="btn">Enceladus mission concept presentation*</div>
+              <Link
+                to="https://onedrive.live.com/?v=validatepermission&id=1BE0632E5BED2779%2113465&challengeToken=%21ANw5acOHS89bLyM"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="btn">
+                  Enceladus mission concept presentation*
+                </div>
+              </Link>
               *Because of the private nature of information in this
               presentation, please enter Ian's PSU Access ID to view
               presentation. Not for public access.
