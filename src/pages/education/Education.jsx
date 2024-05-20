@@ -95,8 +95,8 @@ function Education() {
               </div>
             </div>
           </div>
-          <div className="div5" onClick={toggleDropdown}>
-            <h3>
+          <div className="div5">
+            <h3 onClick={toggleDropdown} style={{ cursor: "pointer" }}>
               COURSE LIST &nbsp;&nbsp;&nbsp;
               {isDropdownOpen ? <SlArrowUp /> : <SlArrowDown />}
             </h3>

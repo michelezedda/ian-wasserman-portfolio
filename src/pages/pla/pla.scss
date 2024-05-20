@@ -69,6 +69,25 @@
     display: flex;
     gap: 20px;
     background-color: bisque;
+    .blog-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .blog-card {
+        text-align: center;
+        background-color: blanchedalmond;
+        border: 2px solid $blue-color;
+        padding: 10px;
+        border-radius: 5px;
+        &:hover {
+          transition: 0.2s ease-in-out;
+          background-color: $blue-color;
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
   }
   .div5 {
     background-color: lightgreen;

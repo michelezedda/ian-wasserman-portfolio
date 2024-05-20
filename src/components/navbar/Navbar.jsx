@@ -27,7 +27,9 @@ function Navbar() {
         <p>An Engineering Portfolio</p>
       </div>
       <nav className={isScrolled ? "scrolled" : ""}>
-        <h1>IAN WASSERMAN</h1>
+        <Link to="/">
+          <h1>IAN WASSERMAN</h1>
+        </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="nav-icon"></span>

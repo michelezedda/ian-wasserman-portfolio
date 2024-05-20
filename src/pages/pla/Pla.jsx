@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Pla() {
   const [dropdownStates, setDropdownStates] = useState([]);
@@ -110,30 +111,54 @@ function Pla() {
               publicly available blogs can be viewed HERE, however select
               favorites are described below:
             </p>
-            <div className="btn">
-              Modern Thermodynamics and the Origins of Life
+            <div className="blog-container">
+              <Link
+                to="https://sites.psu.edu/academy/2019/11/10/modern-thermodynamics-and-the-origins-of-life/"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="blog-card">
+                  Modern Thermodynamics and the Origins of Life
+                  <p>
+                    This blog discusses how thermodynamics can play a rather
+                    unique role in helping answer some of life's most profound
+                    questions.
+                  </p>
+                </div>
+              </Link>
+              <Link
+                to="https://sites.psu.edu/academy/2018/02/03/when-virtual-reality-makes-a-better-reality/"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="blog-card">
+                  When Virtual Reality Makes a Better Reality
+                  <p>
+                    This post explores how excess waste can be avoided using VR
+                    technology, and that it can offer more to humanity than
+                    being unsustainable ever did.
+                  </p>
+                </div>
+              </Link>
+              <Link
+                to="https://sites.psu.edu/academy/2020/02/02/gratitude/"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <div className="blog-card">
+                  Gratitude
+                  <p>
+                    This entry talks about how a relatively simple New Year's
+                    resolution can have a lasting impact on one's overall
+                    happiness.
+                  </p>
+                </div>
+              </Link>
             </div>
-            <p>
-              This blog discusses how thermodynamics can play a rather unique
-              role in helping answer some of life's most profound questions.{" "}
-            </p>
-            <div className="btn">
-              When Virtual Reality Makes a Better Reality
-            </div>
-            <p>
-              This post explores how excess waste can be avoided using VR
-              technology, and that it can offer more to humanity than being
-              unsustainable ever did.
-            </p>
-            <div className="btn">Gratitude</div>
-            <p>
-              This entry talks about how a relatively simple New Year's
-              resolution can have a lasting impact on one's overall happiness.
-            </p>
           </div>
           <div className="div5">
             <h3>REFLECTIONS ON PLA</h3>
-            <h4 onClick={() => toggleDropdown(0)}>
+            <h4 onClick={() => toggleDropdown(0)} style={{ cursor: "pointer" }}>
               How have I grown, and how has the academy impacted me?
               &nbsp;&nbsp;&nbsp;
               {dropdownStates[0] ? <SlArrowUp /> : <SlArrowDown />}
@@ -150,7 +175,7 @@ function Pla() {
                 the power of good mentorship.
               </p>
             )}
-            <h4 onClick={() => toggleDropdown(1)}>
+            <h4 onClick={() => toggleDropdown(1)} style={{ cursor: "pointer" }}>
               How would I describe my leadership style? Has it changed since
               when I applied to the academy? &nbsp;&nbsp;&nbsp;
               {dropdownStates[1] ? <SlArrowUp /> : <SlArrowDown />}
@@ -170,7 +195,7 @@ function Pla() {
                 this!
               </p>
             )}
-            <h4 onClick={() => toggleDropdown(2)}>
+            <h4 onClick={() => toggleDropdown(2)} style={{ cursor: "pointer" }}>
               What are some recommended changes or additions to the PLA for
               future classes? &nbsp;&nbsp;&nbsp;
               {dropdownStates[2] ? <SlArrowUp /> : <SlArrowDown />}
