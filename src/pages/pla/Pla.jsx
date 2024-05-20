@@ -42,9 +42,9 @@ function Pla() {
             the ability to engage in high-level debate. This page reflects on
             some selected experiences Ian had in the academy.
           </p>
+          <h3>TRIPS</h3>
           <div className="first-row">
             <div className="div1">
-              <h3>TRIPS</h3>
               <h4>WASHINGTON D.C.</h4>
               <p>
                 My first trip with the PLA was to our nation's capital. Here we

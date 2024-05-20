@@ -64,39 +64,42 @@ function Education() {
             </div>
           </div>
           <div className="second-row">
-            <div className="div3">
-              <h3>COLLEGE OF ENGINEERING</h3>
-              <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
-              <p>
-                The Environmental Engineering Minor provides students with a
-                comprehensive study of environmental issues and the skills
-                needed to solve problems involving environmental pollution.
-                Areas that are covered include water treatment and remediation,
-                waste disposal, air pollution, and energy production.
-              </p>
-              <div className="btn">Go to Minor Degree Program</div>
-            </div>
-            <div className="div4">
-              <h4>BACHELOR OF SCIENCE: ENERGY ENGINEERING</h4>
-              <p>
-                The Energy Engineering major prepares students to be successful
-                leaders in advancing the technology and management of energy.
-                This includes learning innovative and entrepreneurial approaches
-                to the energy sector, gaining fundamental engineering skills,
-                understanding policy and economic aspects to energy projects,
-                and a commitment to environmental stewardship. Students dive
-                deep into learning about various forms of energy processing and
-                conversion, such as wind, hydro, solar, bio or petroleum-based
-                fuels.
-              </p>
-              <div className="btn">Go to B.S. Degree Program</div>
+            <h3>COLLEGE OF ENGINEERING</h3>
+            <div className="second-row-container">
+              <div className="div3">
+                <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
+                <p>
+                  The Environmental Engineering Minor provides students with a
+                  comprehensive study of environmental issues and the skills
+                  needed to solve problems involving environmental pollution.
+                  Areas that are covered include water treatment and
+                  remediation, waste disposal, air pollution, and energy
+                  production.
+                </p>
+                <div className="btn">Go to Minor Degree Program</div>
+              </div>
+              <div className="div4">
+                <h4>BACHELOR OF SCIENCE: ENERGY ENGINEERING</h4>
+                <p>
+                  The Energy Engineering major prepares students to be
+                  successful leaders in advancing the technology and management
+                  of energy. This includes learning innovative and
+                  entrepreneurial approaches to the energy sector, gaining
+                  fundamental engineering skills, understanding policy and
+                  economic aspects to energy projects, and a commitment to
+                  environmental stewardship. Students dive deep into learning
+                  about various forms of energy processing and conversion, such
+                  as wind, hydro, solar, bio or petroleum-based fuels.
+                </p>
+                <div className="btn">Go to B.S. Degree Program</div>
+              </div>
             </div>
           </div>
           <div className="div5" onClick={toggleDropdown}>
-            <h4>
+            <h3>
               COURSE LIST &nbsp;&nbsp;&nbsp;
               {isDropdownOpen ? <SlArrowUp /> : <SlArrowDown />}
-            </h4>
+            </h3>
             {isDropdownOpen && (
               <p>
                 <b>Transfer Credits from High School</b>
