@@ -1,7 +1,6 @@
 import "./more.css";
 import { Link } from "react-router-dom";
 import educationPic from "/education.png";
-import plaPic from "/pla.png";
 import projectsPic from "/projects.png";
 
 function More() {
