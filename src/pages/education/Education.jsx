@@ -4,9 +4,40 @@ import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 function Education() {
+  const [isVisibleEduCard3, setIsVisibleEduCard3] = useState(false);
+  const [isVisibleEduCard4, setIsVisibleEduCard4] = useState(false);
+  const [isVisibleEduCard5, setIsVisibleEduCard5] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const [refEduCard3, inViewEduCard3] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [refEduCard4, inViewEduCard4] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [refEduCard5, inViewEduCard5] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inViewEduCard3) setIsVisibleEduCard3(true);
+  }, [inViewEduCard3]);
+
+  useEffect(() => {
+    if (inViewEduCard4) setIsVisibleEduCard4(true);
+  }, [inViewEduCard4]);
+
+  useEffect(() => {
+    if (inViewEduCard5) setIsVisibleEduCard5(true);
+  }, [inViewEduCard5]);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -64,7 +95,10 @@ function Education() {
           <div className="second-row">
             <h3>COLLEGE OF ENGINEERING</h3>
             <div className="second-row-container">
-              <div className="edu-card3">
+              <div
+                className={`edu-card3 ${isVisibleEduCard3 ? "visible" : ""}`}
+                ref={refEduCard3}
+              >
                 <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
                 <p>
                   The Environmental Engineering Minor provides students with a
@@ -75,7 +109,10 @@ function Education() {
                   production.
                 </p>
               </div>
-              <div className="edu-card4">
+              <div
+                className={`edu-card4 ${isVisibleEduCard4 ? "visible" : ""}`}
+                ref={refEduCard4}
+              >
                 <h4>BACHELOR OF SCIENCE: ENERGY ENGINEERING</h4>
                 <p>
                   The Energy Engineering major prepares students to be
@@ -91,7 +128,10 @@ function Education() {
               </div>
             </div>
           </div>
-          <div className="edu-card5">
+          <div
+            className={`edu-card5 ${isVisibleEduCard5 ? "visible" : ""}`}
+            ref={refEduCard5}
+          >
             <h3 onClick={toggleDropdown} style={{ cursor: "pointer" }}>
               COURSE LIST &nbsp;&nbsp;&nbsp;
               {isDropdownOpen ? <SlArrowUp /> : <SlArrowDown />}

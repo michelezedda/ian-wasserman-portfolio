@@ -69,3 +69,16 @@
     padding: 10px;
   }
 }
+.edu-card3,
+.edu-card4,
+.edu-card5 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+.edu-card3.visible,
+.edu-card4.visible,
+.edu-card5.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
