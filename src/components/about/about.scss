@@ -19,6 +19,7 @@
         width: 500px;
         border-radius: 5px;
         box-shadow: 0 0 15px lighten($primary-color, 0.9%);
+        animation: shadowGlow 2s infinite linear;
       }
     }
     .right {
@@ -33,6 +34,17 @@
         text-align: justify;
       }
     }
+  }
+}
+@keyframes shadowGlow {
+  0% {
+    box-shadow: 0 0 15px lighten($primary-color, 0.9%);
+    transform: translate(0, 0);
+  }
+  100% {
+    box-shadow: calc(30px * cos(2 * 3.14 * (time / 2)))
+      calc(30px * sin(2 * 3.14 * (time / 2))) 30px lighten($primary-color, 20%);
+    transform: translate(0, 0);
   }
 }
 
