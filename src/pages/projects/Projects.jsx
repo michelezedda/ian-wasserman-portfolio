@@ -44,7 +44,7 @@ function Projects() {
         <div className="container">
           <h2>PROJECTS</h2>
           <div className="first-row">
-            <div className="div1">
+            <div className="project1">
               <h3>CHEMICAL-LOOPING COMBUSTION</h3>
               <h4>WASTE RESOURCE RECOVERY RESEARCH</h4>
               <p>
@@ -69,7 +69,7 @@ function Projects() {
                 </div>
               </Link>
             </div>
-            <div className="div2">
+            <div className="project2">
               <h3>EUROPA CLIPPER SPACECRAFT</h3>
               <h4>THERMAL ENGINEERING INTERNSHIP</h4>
               <p>
@@ -98,7 +98,7 @@ function Projects() {
           </div>
           <div className="second-row">
             <div
-              className={`div3 ${isVisibleDiv3 ? "visible" : ""}`}
+              className={`project3 ${isVisibleDiv3 ? "visible" : ""}`}
               ref={refDiv3}
             >
               <h3>SHELL ECO-MARATHON</h3>
@@ -125,7 +125,7 @@ function Projects() {
               </Link>
             </div>
             <div
-              className={`div4 ${isVisibleDiv4 ? "visible" : ""}`}
+              className={`project4 ${isVisibleDiv4 ? "visible" : ""}`}
               ref={refDiv4}
             >
               <h3>ENCELADUS CONCEPT MISSION</h3>

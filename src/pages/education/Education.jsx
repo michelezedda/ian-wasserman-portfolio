@@ -33,7 +33,7 @@ function Education() {
             within a short amount of time was proven to be quite successful.
           </p>
           <div className="first-row">
-            <div className="div1">
+            <div className="edu-card1">
               <h3>COLLEGE OF EARTH AND MINERAL SCIENCES</h3>
               <h4>MASTER OF SCIENCE: ENERGY AND MINERAL ENGINEERING</h4>
               <p>
@@ -48,7 +48,7 @@ function Education() {
                 two additional semesters.
               </p>
             </div>
-            <div className="div2">
+            <div className="edu-card2">
               <h3>INTRACOLLEGIATE</h3>
               <h4>CERTIFICATE: THE PRESIDENTIAL LEADERSHIP ACADEMY</h4>
               <p>
@@ -64,7 +64,7 @@ function Education() {
           <div className="second-row">
             <h3>COLLEGE OF ENGINEERING</h3>
             <div className="second-row-container">
-              <div className="div3">
+              <div className="edu-card3">
                 <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
                 <p>
                   The Environmental Engineering Minor provides students with a
@@ -75,7 +75,7 @@ function Education() {
                   production.
                 </p>
               </div>
-              <div className="div4">
+              <div className="edu-card4">
                 <h4>BACHELOR OF SCIENCE: ENERGY ENGINEERING</h4>
                 <p>
                   The Energy Engineering major prepares students to be
@@ -91,7 +91,7 @@ function Education() {
               </div>
             </div>
           </div>
-          <div className="div5">
+          <div className="edu-card5">
             <h3 onClick={toggleDropdown} style={{ cursor: "pointer" }}>
               COURSE LIST &nbsp;&nbsp;&nbsp;
               {isDropdownOpen ? <SlArrowUp /> : <SlArrowDown />}
