@@ -11,8 +11,8 @@ function Projects() {
   const [isVisibleDiv4, setIsVisibleDiv4] = useState(false);
 
   const [refDiv3, inViewDiv3] = useInView({
-    triggerOnce: true, // attiva il rilevamento solo una volta
-    threshold: 0.5, // imposta il trigger quando il 50% del componente è visibile
+    triggerOnce: true,
+    threshold: 0.5,
   });
 
   const [refDiv4, inViewDiv4] = useInView({
