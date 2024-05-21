@@ -87,3 +87,14 @@
     transform: scale(0.98);
   }
 }
+.div3,
+.div4 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+.div3.visible,
+.div4.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

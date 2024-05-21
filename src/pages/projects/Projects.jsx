@@ -2,10 +2,32 @@ import "./projects.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
 function Projects() {
+  const [isVisibleDiv3, setIsVisibleDiv3] = useState(false);
+  const [isVisibleDiv4, setIsVisibleDiv4] = useState(false);
+
+  const [refDiv3, inViewDiv3] = useInView({
+    triggerOnce: true, // attiva il rilevamento solo una volta
+    threshold: 0.5, // imposta il trigger quando il 50% del componente è visibile
+  });
+
+  const [refDiv4, inViewDiv4] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inViewDiv3) setIsVisibleDiv3(true);
+  }, [inViewDiv3]);
+
+  useEffect(() => {
+    if (inViewDiv4) setIsVisibleDiv4(true);
+  }, [inViewDiv4]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -75,7 +97,10 @@ function Projects() {
             </div>
           </div>
           <div className="second-row">
-            <div className="div3">
+            <div
+              className={`div3 ${isVisibleDiv3 ? "visible" : ""}`}
+              ref={refDiv3}
+            >
               <h3>SHELL ECO-MARATHON</h3>
               <h4>URBAN CONCEPT VEHICLE CAPSTONE</h4>
               <p>
@@ -99,7 +124,10 @@ function Projects() {
                 <div className="btn">Eco-marathon vehicle presentation</div>
               </Link>
             </div>
-            <div className="div4">
+            <div
+              className={`div4 ${isVisibleDiv4 ? "visible" : ""}`}
+              ref={refDiv4}
+            >
               <h3>ENCELADUS CONCEPT MISSION</h3>
               <h4>SYSTEMS ENGINEERING INTERNSHIP</h4>
               <p>
