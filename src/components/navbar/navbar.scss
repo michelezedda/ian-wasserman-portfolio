@@ -76,9 +76,9 @@ nav {
 .scrolled {
   background-color: $primary-color;
   border-bottom: 2px solid darken($blue-color, 10%);
-  box-shadow: 0 0 10px $blue-color;
+  box-shadow: 0 0 10px $darkblue-color;
   h1 {
-    color: $blue-color;
+    color: $darkblue-color;
     font-size: 40px;
     margin: 0;
     font-weight: 600;
@@ -90,7 +90,7 @@ nav {
     padding: 10px 20px;
   }
   a {
-    color: $blue-color;
+    color: $darkblue-color;
     text-decoration: none;
     font-size: 25px;
     position: relative;
