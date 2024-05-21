@@ -24,13 +24,6 @@ function More() {
                 <p>Various Technical Endeavors</p>
               </div>
             </Link>
-            <Link to="pla">
-              <div>
-                <img src={plaPic} alt="PLA" />
-                <h4>PLA</h4>
-                <p>Presidential Leadership Academy</p>
-              </div>
-            </Link>
           </div>
         </div>
       </div>

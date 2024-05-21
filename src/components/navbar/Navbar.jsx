@@ -44,9 +44,6 @@ function Navbar() {
           <li>
             <Link to="/projects">Projects</Link>
           </li>
-          <li>
-            <Link to="/pla">PLA</Link>
-          </li>
         </ul>
       </nav>
     </>
