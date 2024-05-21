@@ -38,12 +38,23 @@
 }
 @keyframes shadowGlow {
   0% {
-    box-shadow: 0 0 15px lighten($primary-color, 0.9%);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    transform: translate(0, 0);
+  }
+  25% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+    transform: translate(0, 0);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    transform: translate(0, 0);
+  }
+  75% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
     transform: translate(0, 0);
   }
   100% {
-    box-shadow: calc(30px * cos(2 * 3.14 * (time / 2)))
-      calc(30px * sin(2 * 3.14 * (time / 2))) 30px lighten($primary-color, 20%);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
     transform: translate(0, 0);
   }
 }
