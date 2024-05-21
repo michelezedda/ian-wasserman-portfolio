@@ -7,7 +7,15 @@
   padding-bottom: 0;
   height: 55vh;
   text-align: center;
-  background-color: darken($blue-color, 10%);
+  background: linear-gradient(
+    180deg,
+    #f6f9ff,
+    #aac5e9,
+    #558cca,
+    #2f72bf,
+    #004aad,
+    #004aad
+  );
   color: $primary-color;
   .split {
     display: flex;
@@ -32,6 +40,10 @@
       p {
         font-size: 22px;
         text-align: justify;
+        font-weight: 200;
+      }
+      b {
+        font-weight: 300;
       }
     }
   }
