@@ -2,6 +2,19 @@
 
 html,
 body {
+  background: linear-gradient(
+    180deg,
+    #f6f9ff,
+    #f6f9ff,
+    #f6f9ff,
+    #8da9d7 30%,
+    #4b66a3 50%,
+    #004aad 70%,
+    #002e89 80%,
+    #183478 90%,
+    #1e2f76 95%,
+    #223476
+  );
   font-family: $font-stack;
   line-height: 1.5;
   font-weight: 400;

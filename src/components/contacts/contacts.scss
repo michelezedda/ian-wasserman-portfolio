@@ -1,0 +1,50 @@
+@import "../../styles/config";
+
+.contacts {
+  background-color: $bg-color;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 395px 0 25px 0;
+  padding: 50px;
+  box-shadow: 0 0 500px $primary-color;
+  h3 {
+    font-size: 30px;
+    color: $blue-color;
+    margin: 5px 0 0 0;
+    font-weight: 300;
+  }
+  .social-medias {
+    display: flex;
+    gap: 50px;
+    font-size: 35px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $blue-color;
+      border-radius: 3px;
+      color: $blue-color;
+      padding: 10px 10px;
+      font-size: 22px;
+      .email {
+        margin-right: 10px;
+        font-size: 25px;
+      }
+      .linkedin {
+        margin-right: 10px;
+      }
+      &:hover {
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0 0 10px lighten($blue-color, 10%);
+      }
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+}
