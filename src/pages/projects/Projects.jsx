@@ -7,26 +7,26 @@ import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
 function Projects() {
-  const [isVisibleDiv3, setIsVisibleDiv3] = useState(false);
-  const [isVisibleDiv4, setIsVisibleDiv4] = useState(false);
+  const [isVisibleProject3, setIsVisibleProject3] = useState(false);
+  const [isVisibleProject4, setIsVisibleProject4] = useState(false);
 
-  const [refDiv3, inViewDiv3] = useInView({
+  const [refProject3, inViewProject3] = useInView({
     triggerOnce: true,
     threshold: 0.5,
   });
 
-  const [refDiv4, inViewDiv4] = useInView({
+  const [refProject4, inViewProject4] = useInView({
     triggerOnce: true,
     threshold: 0.5,
   });
 
   useEffect(() => {
-    if (inViewDiv3) setIsVisibleDiv3(true);
-  }, [inViewDiv3]);
+    if (inViewProject3) setIsVisibleProject3(true);
+  }, [inViewProject3]);
 
   useEffect(() => {
-    if (inViewDiv4) setIsVisibleDiv4(true);
-  }, [inViewDiv4]);
+    if (inViewProject4) setIsVisibleProject4(true);
+  }, [inViewProject4]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -98,8 +98,8 @@ function Projects() {
           </div>
           <div className="second-row">
             <div
-              className={`project3 ${isVisibleDiv3 ? "visible" : ""}`}
-              ref={refDiv3}
+              className={`project3 ${isVisibleProject3 ? "visible" : ""}`}
+              ref={refProject3}
             >
               <h3>SHELL ECO-MARATHON</h3>
               <h4>URBAN CONCEPT VEHICLE CAPSTONE</h4>
@@ -125,8 +125,8 @@ function Projects() {
               </Link>
             </div>
             <div
-              className={`project4 ${isVisibleDiv4 ? "visible" : ""}`}
-              ref={refDiv4}
+              className={`project4 ${isVisibleProject4 ? "visible" : ""}`}
+              ref={refProject4}
             >
               <h3>ENCELADUS CONCEPT MISSION</h3>
               <h4>SYSTEMS ENGINEERING INTERNSHIP</h4>
