@@ -10,7 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    div {
+    .button1,
+    .button2 {
       position: relative;
       text-align: center;
       border-radius: 5px;
@@ -68,6 +69,17 @@
       }
     }
   }
+}
+.button1,
+.button2 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+.button1.visible,
+.button2.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 // MEDIA QUERIES //
