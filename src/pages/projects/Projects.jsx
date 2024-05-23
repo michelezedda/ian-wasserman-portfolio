@@ -43,7 +43,7 @@ function Projects() {
       <div className="projects">
         <div className="container">
           <h2>PROJECTS</h2>
-          <div className="first-row">
+          <div className="first-project-row">
             <div className="project1">
               <h3>CHEMICAL-LOOPING COMBUSTION</h3>
               <h4>WASTE RESOURCE RECOVERY RESEARCH</h4>
@@ -96,7 +96,7 @@ function Projects() {
               </Link>
             </div>
           </div>
-          <div className="second-row">
+          <div className="second-project-row">
             <div
               className={`project3 ${isVisibleProject3 ? "visible" : ""}`}
               ref={refProject3}
