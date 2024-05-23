@@ -33,7 +33,7 @@
   p {
     font-size: 24px;
   }
-  .first-row {
+  .first-education-row {
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -50,7 +50,7 @@
       padding: 20px;
     }
   }
-  .second-row {
+  .second-education-row {
     margin: 0 0 50px 0;
     justify-content: space-around;
     gap: 20px;
@@ -58,7 +58,7 @@
     padding: 10px;
     background-color: darken($div-color, 10%);
     padding: 20px;
-    .second-row-container {
+    .second-education-row-container {
       display: flex;
       gap: 20px;
       .edu-card3 {
@@ -83,7 +83,7 @@
     padding: 10px;
   }
 }
-.second-row {
+.second-education-row {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 2s ease, transform 2s ease;
@@ -93,7 +93,7 @@
   transform: translateY(50px);
   transition: opacity 5s ease, transform 5s ease;
 }
-.second-row.visible,
+.second-education-row.visible,
 .edu-card5.visible {
   opacity: 1;
   transform: translateY(0);

@@ -7,11 +7,12 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 function Education() {
-  const [isVisibleSecondRow, setIsVisibleSecondRow] = useState(false);
+  const [isVisibleSecondEducationRow, setIsVisibleSecondEducationRow] =
+    useState(false);
   const [isVisibleEduCard5, setIsVisibleEduCard5] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const [refSecondRow, inViewSecondRow] = useInView({
+  const [refSecondEducationRow, inViewSecondEducationRow] = useInView({
     triggerOnce: true,
     threshold: 0.5,
   });
@@ -22,8 +23,8 @@ function Education() {
   });
 
   useEffect(() => {
-    if (inViewSecondRow) setIsVisibleSecondRow(true);
-  }, [inViewSecondRow]);
+    if (inViewSecondEducationRow) setIsVisibleSecondEducationRow(true);
+  }, [inViewSecondEducationRow]);
 
   useEffect(() => {
     if (inViewEduCard5) setIsVisibleEduCard5(true);
@@ -53,7 +54,7 @@ function Education() {
             However, Ian's goal of achieving high levels of academic excellence
             within a short amount of time was proven to be quite successful.
           </h4>
-          <div className="first-row">
+          <div className="first-education-row">
             <div className="edu-card1">
               <h3>COLLEGE OF EARTH AND MINERAL SCIENCES</h3>
               <h4>MASTER OF SCIENCE: ENERGY AND MINERAL ENGINEERING</h4>
@@ -83,11 +84,13 @@ function Education() {
             </div>
           </div>
           <div
-            className={`second-row ${isVisibleSecondRow ? "visible" : ""}`}
-            ref={refSecondRow}
+            className={`second-education-row ${
+              isVisibleSecondEducationRow ? "visible" : ""
+            }`}
+            ref={refSecondEducationRow}
           >
             <h3>COLLEGE OF ENGINEERING</h3>
-            <div className="second-row-container">
+            <div className="second-education-row-container">
               <div className="edu-card3">
                 <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
                 <p>
