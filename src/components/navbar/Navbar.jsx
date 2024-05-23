@@ -23,12 +23,12 @@ function Navbar() {
   return (
     <>
       <div className="navbar-background">
-        <h2>IAN WASSERMAN</h2>
+        <h1>IAN WASSERMAN</h1>
         <p>An Engineering Portfolio</p>
       </div>
       <nav className={isScrolled ? "scrolled" : ""}>
         <Link to="/">
-          <h1>IAN WASSERMAN</h1>
+          <h2>IAN WASSERMAN</h2>
         </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">

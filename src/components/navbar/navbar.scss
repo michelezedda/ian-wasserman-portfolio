@@ -10,9 +10,9 @@ nav {
   justify-content: space-around;
   flex-wrap: wrap;
   transition: background-color 0.3s ease;
-  h1 {
+  h2 {
     color: $primary-color;
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
     font-weight: 600;
   }
@@ -58,7 +58,7 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  h2 {
+  h1 {
     color: $primary-color;
     text-align: center;
     font-size: 80px;
@@ -77,11 +77,13 @@ nav {
   background-color: $primary-color;
   border-bottom: 2px solid darken($blue-color, 10%);
   box-shadow: 0 0 10px $darkblue-color;
-  h1 {
-    color: $darkblue-color;
-    font-size: 40px;
+  h2 {
+    font-size: 50px;
     margin: 0;
     font-weight: 600;
+    background: linear-gradient(180deg, #004c94 45%, #297bc4 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   li {
     display: inline-block;
