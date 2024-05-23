@@ -92,11 +92,15 @@
     transform: scale(0.98);
   }
 }
-.project3,
-.project4 {
+.project3 {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 2s ease, transform 2s ease;
+}
+.project4 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 4s ease, transform 4s ease;
 }
 .project3.visible,
 .project4.visible {

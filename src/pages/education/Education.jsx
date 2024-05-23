@@ -7,17 +7,11 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 function Education() {
-  const [isVisibleEduCard3, setIsVisibleEduCard3] = useState(false);
-  const [isVisibleEduCard4, setIsVisibleEduCard4] = useState(false);
+  const [isVisibleSecondRow, setIsVisibleSecondRow] = useState(false);
   const [isVisibleEduCard5, setIsVisibleEduCard5] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const [refEduCard3, inViewEduCard3] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
-  const [refEduCard4, inViewEduCard4] = useInView({
+  const [refSecondRow, inViewSecondRow] = useInView({
     triggerOnce: true,
     threshold: 0.5,
   });
@@ -28,12 +22,8 @@ function Education() {
   });
 
   useEffect(() => {
-    if (inViewEduCard3) setIsVisibleEduCard3(true);
-  }, [inViewEduCard3]);
-
-  useEffect(() => {
-    if (inViewEduCard4) setIsVisibleEduCard4(true);
-  }, [inViewEduCard4]);
+    if (inViewSecondRow) setIsVisibleSecondRow(true);
+  }, [inViewSecondRow]);
 
   useEffect(() => {
     if (inViewEduCard5) setIsVisibleEduCard5(true);
@@ -92,13 +82,13 @@ function Education() {
               </p>
             </div>
           </div>
-          <div className="second-row">
+          <div
+            className={`second-row ${isVisibleSecondRow ? "visible" : ""}`}
+            ref={refSecondRow}
+          >
             <h3>COLLEGE OF ENGINEERING</h3>
             <div className="second-row-container">
-              <div
-                className={`edu-card3 ${isVisibleEduCard3 ? "visible" : ""}`}
-                ref={refEduCard3}
-              >
+              <div className="edu-card3">
                 <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
                 <p>
                   The Environmental Engineering Minor provides students with a
@@ -109,10 +99,7 @@ function Education() {
                   production.
                 </p>
               </div>
-              <div
-                className={`edu-card4 ${isVisibleEduCard4 ? "visible" : ""}`}
-                ref={refEduCard4}
-              >
+              <div className="edu-card4">
                 <h4>BACHELOR OF SCIENCE: ENERGY ENGINEERING</h4>
                 <p>
                   The Energy Engineering major prepares students to be
