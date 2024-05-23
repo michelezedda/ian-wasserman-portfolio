@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 450px 0;
+  padding: 450px 0 250px;
   margin: 0;
   background-color: $primary-color;
   color: $black-color;
@@ -14,7 +14,7 @@
   text-align: left;
   h2 {
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
     background: linear-gradient(180deg, #004c94 45%, #297bc4 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,37 +37,48 @@
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    margin: 60px 0 20px 0;
+    margin: 60px 0 50px 0;
     .edu-card1 {
-      background-color: lightblue;
+      border-radius: 5px;
+      background-color: $div-color;
       padding: 20px;
     }
     .edu-card2 {
-      background-color: pink;
+      border-radius: 5px;
+      background-color: $div-color;
+      padding: 20px;
       padding: 20px;
     }
   }
   .second-row {
+    margin: 0 0 50px 0;
     justify-content: space-around;
     gap: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: gray;
+    background-color: darken($div-color, 10%);
+    padding: 20px;
     .second-row-container {
       display: flex;
       gap: 20px;
       .edu-card3 {
-        background-color: lightcoral;
+        border-radius: 5px;
+        background-color: $div-color;
+        padding: 20px;
         padding: 20px;
       }
       .edu-card4 {
-        background-color: palegoldenrod;
+        border-radius: 5px;
+        background-color: $div-color;
+        padding: 20px;
         padding: 20px;
       }
     }
   }
   .edu-card5 {
-    background-color: lightgreen;
+    margin: 50px 0 0 0;
+    background-color: $div-color;
+    padding: 20px;
     text-align: left;
     padding: 10px;
   }

@@ -58,11 +58,11 @@ function Education() {
       <div className="education">
         <div className="container">
           <h2>FOUR YEARS, THREE DEGREES, TWO COLLEGES, ONE MISSION</h2>
-          <p>
+          <h4>
             Accomplishing a master's, bachelor's, and a minor is no easy task.
             However, Ian's goal of achieving high levels of academic excellence
             within a short amount of time was proven to be quite successful.
-          </p>
+          </h4>
           <div className="first-row">
             <div className="edu-card1">
               <h3>COLLEGE OF EARTH AND MINERAL SCIENCES</h3>
