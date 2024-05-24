@@ -56,18 +56,14 @@ function Education() {
           </h4>
           <div className="first-education-row">
             <div className="edu-card1">
-              <h3>COLLEGE OF EARTH AND MINERAL SCIENCES</h3>
-              <h4>MASTER OF SCIENCE: ENERGY AND MINERAL ENGINEERING</h4>
+              <h3>COLLEGE OF ENGINEERING</h3>
+              <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
               <p>
-                The Master's degree program in The John and Willie Leone Family
-                Department of Energy and Mineral Engineering provides students
-                with an integrated learning experience that addresses the
-                challenges of the rapidly evolving energy and mineral
-                industries. The thesis-based M.S. path allowed Ian to conduct
-                research in the areas of waste resource recovery and advanced
-                power generation. The Integrated Undergrad/Graduate Studies
-                (IUG) program made it so Ian could complete his Master's in only
-                two additional semesters.
+                The Environmental Engineering Minor provides students with a
+                comprehensive study of environmental issues and the skills
+                needed to solve problems involving environmental pollution.
+                Areas that are covered include water treatment and remediation,
+                waste disposal, air pollution, and energy production.
               </p>
             </div>
             <div className="edu-card2">
@@ -89,17 +85,20 @@ function Education() {
             }`}
             ref={refSecondEducationRow}
           >
-            <h3>COLLEGE OF ENGINEERING</h3>
+            <h3>COLLEGE OF EARTH AND MINERAL SCIENCES</h3>
             <div className="second-education-row-container">
               <div className="edu-card3">
-                <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
+                <h4>MASTER OF SCIENCE: ENERGY AND MINERAL ENGINEERING</h4>
                 <p>
-                  The Environmental Engineering Minor provides students with a
-                  comprehensive study of environmental issues and the skills
-                  needed to solve problems involving environmental pollution.
-                  Areas that are covered include water treatment and
-                  remediation, waste disposal, air pollution, and energy
-                  production.
+                  The Master's degree program in The John and Willie Leone
+                  Family Department of Energy and Mineral Engineering provides
+                  students with an integrated learning experience that addresses
+                  the challenges of the rapidly evolving energy and mineral
+                  industries. The thesis-based M.S. path allowed Ian to conduct
+                  research in the areas of waste resource recovery and advanced
+                  power generation. The Integrated Undergrad/Graduate Studies
+                  (IUG) program made it so Ian could complete his Master's in
+                  only two additional semesters.
                 </p>
               </div>
               <div className="edu-card4">

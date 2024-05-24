@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 450px 0 250px;
+  padding: 450px 0 300px;
   margin: 0;
   background-color: $primary-color;
   color: $black-color;
@@ -20,11 +20,13 @@
     -webkit-text-fill-color: transparent;
   }
   h3 {
+    color: $darkblue-color;
     text-align: center;
     font-size: 35px;
     margin: 10px 0 10px 0;
   }
   h4 {
+    color: $darkblue-color;
     text-align: center;
     font-size: 27px;
     font-weight: 400;
@@ -42,12 +44,10 @@
       border-radius: 5px;
       background-color: $div-color;
       padding: 20px;
-      padding: 20px;
     }
     .project2 {
       border-radius: 5px;
       background-color: $div-color;
-      padding: 20px;
       padding: 20px;
     }
   }
@@ -61,12 +61,10 @@
       border-radius: 5px;
       background-color: $div-color;
       padding: 20px;
-      padding: 20px;
     }
     .project4 {
       border-radius: 5px;
       background-color: $div-color;
-      padding: 20px;
       padding: 20px;
     }
   }
