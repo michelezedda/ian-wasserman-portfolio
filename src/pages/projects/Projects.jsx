@@ -5,6 +5,10 @@ import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import chemicalPic from "/chemical-looping.png";
+import enceladusPic from "/enceladus.png";
+import europaClipperPic from "/europa-clipper.png";
+import shellPic from "/shell.png";
 
 function Projects() {
   const [isVisibleProject3, setIsVisibleProject3] = useState(false);
@@ -47,6 +51,7 @@ function Projects() {
             <div className="project1">
               <h3>CHEMICAL-LOOPING COMBUSTION</h3>
               <h4>WASTE RESOURCE RECOVERY RESEARCH</h4>
+              <img src={chemicalPic} />
               <p>
                 Spring 2018 to Spring 2020 - As a part of the requirements for
                 graduation in the Energy and Mineral Engineering master's
@@ -72,6 +77,7 @@ function Projects() {
             <div className="project2">
               <h3>EUROPA CLIPPER SPACECRAFT</h3>
               <h4>THERMAL ENGINEERING INTERNSHIP</h4>
+              <img src={europaClipperPic} />
               <p>
                 Summer 2019 - Following his junior year, Ian returned to the
                 NASA Jet Propulsion Laboratory (JPL) for a second internship. At
@@ -103,6 +109,7 @@ function Projects() {
             >
               <h3>SHELL ECO-MARATHON</h3>
               <h4>URBAN CONCEPT VEHICLE CAPSTONE</h4>
+              <img src={shellPic} />
               <p>
                 Spring 2019 - As a part of his senior design project, Ian
                 participated on the Shell Eco-Marathon Urban Concept Vehicle
@@ -130,6 +137,7 @@ function Projects() {
             >
               <h3>ENCELADUS CONCEPT MISSION</h3>
               <h4>SYSTEMS ENGINEERING INTERNSHIP</h4>
+              <img src={enceladusPic} />
               <p>
                 Summer 2018 - After his sophomore year, Ian received his first
                 summer internship with the Systems Engineering division at the
