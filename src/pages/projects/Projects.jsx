@@ -46,7 +46,7 @@ function Projects() {
       <Navbar />
       <div className="projects">
         <div className="container">
-          <h2>PROJECTS</h2>
+          <h2 className="title">PROJECTS</h2>
           <div className="first-project-row">
             <div className="project1">
               <h3>CHEMICAL-LOOPING COMBUSTION</h3>

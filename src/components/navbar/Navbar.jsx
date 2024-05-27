@@ -28,7 +28,7 @@ function Navbar() {
       </div>
       <nav className={isScrolled ? "scrolled" : ""}>
         <Link to="/">
-          <h2>IAN WASSERMAN</h2>
+          <h2 className="title">IAN WASSERMAN</h2>
         </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">

@@ -14,7 +14,7 @@ function Contacts() {
               to={`mailto:fesfe@gmail.com`}
               style={{ textDecoration: "none" }}
             >
-              <div>
+              <div className="btn">
                 <TbMail className="email" /> Send an email
               </div>
             </Link>
@@ -23,7 +23,7 @@ function Contacts() {
               target="_blank"
               style={{ textDecoration: "none" }}
             >
-              <div>
+              <div className="btn">
                 <FaLinkedinIn className="linkedin" /> Go to Linkedin
               </div>
             </Link>

@@ -21,30 +21,12 @@
     display: flex;
     gap: 50px;
     font-size: 35px;
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid $darkblue-color;
-      border-radius: 3px;
-      color: $darkblue-color;
-      padding: 10px 10px;
-      font-size: 22px;
-      .email {
-        margin-right: 10px;
-        font-size: 25px;
-      }
-      .linkedin {
-        margin-right: 10px;
-      }
-      &:hover {
-        cursor: pointer;
-        transition: 0.2s ease-in-out;
-        box-shadow: 0 0 10px lighten($blue-color, 10%);
-      }
-      &:active {
-        transform: scale(0.98);
-      }
+    .email {
+      margin-right: 10px;
+      font-size: 25px;
+    }
+    .linkedin {
+      margin-right: 10px;
     }
   }
 }

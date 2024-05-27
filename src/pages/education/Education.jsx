@@ -48,7 +48,9 @@ function Education() {
       <Navbar />
       <div className="education">
         <div className="container">
-          <h2>FOUR YEARS, THREE DEGREES, TWO COLLEGES, ONE MISSION</h2>
+          <h2 className="title">
+            FOUR YEARS, THREE DEGREES, TWO COLLEGES, ONE MISSION
+          </h2>
           <h4>
             Accomplishing a master's, bachelor's, and a minor is no easy task.
             However, Ian's goal of achieving high levels of academic excellence
