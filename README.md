@@ -21,6 +21,7 @@ Ian Wasserman Portfolio - An Engineering Portfolio
 
 ## Technologies Used
 - HTML5 & CSS3: Markup and styling languages for building web pages;
+- JavaScript: A programming language for adding interactivity to web applications;
 - Sass: CSS extension language for web development efficiency;
 - Git: A version control system for tracking changes and collaborating on projects;
 - GitHub Pages: A platform for hosting and deploying web applications;
@@ -29,5 +30,5 @@ Ian Wasserman Portfolio - An Engineering Portfolio
 - Vite: A next-generation front-end dev tool, aiming to improve the developer experience of webpack when it comes to developing JavaScript applications.
 
 ## Project Link
-You see my personal website by clicking the following link :link: [Michele Zedda Portfolio](https://michelezedda.netlify.app/) <br/>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ea4f4b82-8f58-4f5c-b138-5bdd437e6013/deploy-status)](https://app.netlify.com/sites/michelezedda/deploys)
+See his personal website by clicking the following link :link: [Ian Wasserman Portfolio](https://ianwasserman.netlify.app) <br/>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e21830c-6a08-4689-b179-6122d6ec7a7d/deploy-status)](https://app.netlify.com/sites/ianwasserman/deploys)
