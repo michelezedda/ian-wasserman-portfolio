@@ -11,7 +11,9 @@ nav {
   flex-wrap: wrap;
   transition: background-color 0.3s ease;
   h2 {
+    color: $primary-color;
     font-size: 50px;
+    margin: 0;
     font-weight: 600;
   }
   li {
