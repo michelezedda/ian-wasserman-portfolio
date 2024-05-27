@@ -7,12 +7,17 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 function Education() {
-  const [isVisibleSecondEducationRow, setIsVisibleSecondEducationRow] =
-    useState(false);
+  const [isVisibleEduCard3, setIsVisibleEduCard3] = useState(false);
+  const [isVisibleEduCard4, setIsVisibleEduCard4] = useState(false);
   const [isVisibleEduCard5, setIsVisibleEduCard5] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const [refSecondEducationRow, inViewSecondEducationRow] = useInView({
+  const [refEduCard3, inViewEduCard3] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [refEduCard4, inViewEduCard4] = useInView({
     triggerOnce: true,
     threshold: 0.5,
   });
@@ -23,8 +28,12 @@ function Education() {
   });
 
   useEffect(() => {
-    if (inViewSecondEducationRow) setIsVisibleSecondEducationRow(true);
-  }, [inViewSecondEducationRow]);
+    if (inViewEduCard3) setIsVisibleEduCard3(true);
+  }, [inViewEduCard3]);
+
+  useEffect(() => {
+    if (inViewEduCard4) setIsVisibleEduCard4(true);
+  }, [inViewEduCard4]);
 
   useEffect(() => {
     if (inViewEduCard5) setIsVisibleEduCard5(true);
@@ -57,39 +66,9 @@ function Education() {
             within a short amount of time was proven to be quite successful.
           </h4>
           <div className="first-education-row">
-            <div className="edu-card1">
-              <h3>COLLEGE OF ENGINEERING</h3>
-              <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
-              <p>
-                The Environmental Engineering Minor provides students with a
-                comprehensive study of environmental issues and the skills
-                needed to solve problems involving environmental pollution.
-                Areas that are covered include water treatment and remediation,
-                waste disposal, air pollution, and energy production.
-              </p>
-            </div>
-            <div className="edu-card2">
-              <h3>INTRACOLLEGIATE</h3>
-              <h4>CERTIFICATE: THE PRESIDENTIAL LEADERSHIP ACADEMY</h4>
-              <p>
-                The Presidential Leadership Academy (PLA) allows students to
-                develop leadership fundamentals and thrive in environments where
-                multiple dimensions of an issue are explored. This leadership
-                program provides members with the ability to engage in diverse
-                conversation, and embrace new cultural experiences through
-                semesterly trips.
-              </p>
-            </div>
-          </div>
-          <div
-            className={`second-education-row ${
-              isVisibleSecondEducationRow ? "visible" : ""
-            }`}
-            ref={refSecondEducationRow}
-          >
             <h3>COLLEGE OF EARTH AND MINERAL SCIENCES</h3>
-            <div className="second-education-row-container">
-              <div className="edu-card3">
+            <div className="first-education-row-container">
+              <div className="edu-card1">
                 <h4>MASTER OF SCIENCE: ENERGY AND MINERAL ENGINEERING</h4>
                 <p>
                   The Master's degree program in The John and Willie Leone
@@ -103,7 +82,7 @@ function Education() {
                   only two additional semesters.
                 </p>
               </div>
-              <div className="edu-card4">
+              <div className="edu-card2">
                 <h4>BACHELOR OF SCIENCE: ENERGY ENGINEERING</h4>
                 <p>
                   The Energy Engineering major prepares students to be
@@ -117,6 +96,37 @@ function Education() {
                   as wind, hydro, solar, bio or petroleum-based fuels.
                 </p>
               </div>
+            </div>
+          </div>
+          <div className="second-education-row">
+            <div
+              className={`edu-card3 ${isVisibleEduCard3 ? "visible" : ""}`}
+              ref={refEduCard3}
+            >
+              <h3>COLLEGE OF ENGINEERING</h3>
+              <h4>MINOR: ENVRIONMENTAL ENGINEERING</h4>
+              <p>
+                The Environmental Engineering Minor provides students with a
+                comprehensive study of environmental issues and the skills
+                needed to solve problems involving environmental pollution.
+                Areas that are covered include water treatment and remediation,
+                waste disposal, air pollution, and energy production.
+              </p>
+            </div>
+            <div
+              className={`edu-card4 ${isVisibleEduCard4 ? "visible" : ""}`}
+              ref={refEduCard4}
+            >
+              <h3>INTRACOLLEGIATE</h3>
+              <h4>CERTIFICATE: THE PRESIDENTIAL LEADERSHIP ACADEMY</h4>
+              <p>
+                The Presidential Leadership Academy (PLA) allows students to
+                develop leadership fundamentals and thrive in environments where
+                multiple dimensions of an issue are explored. This leadership
+                program provides members with the ability to engage in diverse
+                conversation, and embrace new cultural experiences through
+                semesterly trips.
+              </p>
             </div>
           </div>
           <div

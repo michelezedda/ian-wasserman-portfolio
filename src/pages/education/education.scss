@@ -32,51 +32,21 @@
     color: $blue-color;
   }
   .first-education-row {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin: 60px 0 50px 0;
-    .edu-card1 {
-      box-shadow: 0 0 10px $darkblue-color;
-      border-radius: 5px;
-      background-color: $div-color;
-      padding: 20px;
-    }
-    .edu-card2 {
-      box-shadow: 0 0 10px $darkblue-color;
-      border-radius: 5px;
-      background-color: $div-color;
-      padding: 20px;
-    }
-  }
-  .second-education-row {
     border-radius: 5px;
     box-shadow: 0 0 10px $darkblue-color;
-    margin: 0 0 50px 0;
     justify-content: space-around;
-    gap: 20px;
-    margin-bottom: 20px;
     padding: 10px;
     background-color: darken($div-color, 10%);
     padding: 20px;
-    .second-education-row-container {
+    .first-education-row-container {
       display: flex;
       gap: 20px;
-      .edu-card3 {
-        box-shadow: 0 0 10px $darkblue-color;
-        margin-top: 40px;
-        border-radius: 5px;
-        background-color: $div-color;
-        padding: 20px;
-      }
-      .edu-card4 {
-        box-shadow: 0 0 10px $darkblue-color;
-        margin-top: 40px;
-        border-radius: 5px;
-        background-color: $div-color;
-        padding: 20px;
-      }
     }
+  }
+  .second-education-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
   }
   .edu-card5 {
     border-radius: 5px;
@@ -89,8 +59,20 @@
       margin-bottom: 60px;
     }
   }
+  .edu-card1,
+  .edu-card2,
+  .edu-card3,
+  .edu-card4 {
+    box-shadow: 0 0 10px $darkblue-color;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: $div-color;
+    padding: 20px;
+    width: 600px;
+  }
 }
-.second-education-row {
+.edu-card3,
+.edu-card4 {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 2s ease, transform 2s ease;
@@ -98,9 +80,10 @@
 .edu-card5 {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 5s ease, transform 5s ease;
+  transition: opacity 4s ease, transform 4s ease;
 }
-.second-education-row.visible,
+.edu-card3.visible,
+.edu-card4.visible,
 .edu-card5.visible {
   opacity: 1;
   transform: translateY(0);
