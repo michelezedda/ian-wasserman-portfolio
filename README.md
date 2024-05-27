@@ -15,7 +15,7 @@
 Ian Wasserman Portfolio - An Engineering Portfolio
 
 ## Sections
-- Homepage: A brief introduction about Ian, a way to connect with him and buttons ;
+- Homepage: Discover Ian's story in a brief introduction, connect with him directly, and explore is educational journey and projects;
 - Projects page: A collection of his projects with descriptions and clickable links;
 - Education page: Delve into Ian's educational journey, highlighting his academic achievements, courses, and certifications.
 
