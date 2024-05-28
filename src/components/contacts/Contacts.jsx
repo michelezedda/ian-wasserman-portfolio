@@ -10,18 +10,15 @@ function Contacts() {
         <div className="container">
           <div className="social-medias">
             <h3>Connect with me:</h3>
-            <Link
-              to={`mailto:fesfe@gmail.com`}
-              style={{ textDecoration: "none" }}
-            >
+            <Link className="link" to={`mailto:fesfe@gmail.com`}>
               <div className="btn">
                 <TbMail className="email" /> Send an email
               </div>
             </Link>
             <Link
+              className="link"
               to="https://www.linkedin.com/in/ianwass/"
               target="_blank"
-              style={{ textDecoration: "none" }}
             >
               <div className="btn">
                 <FaLinkedinIn className="linkedin" /> Go to Linkedin

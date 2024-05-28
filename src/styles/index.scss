@@ -29,6 +29,7 @@ body {
   color: $darkblue-color;
   padding: 10px 10px;
   font-size: 22px;
+  color: $darkblue-color;
   &:hover {
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -37,6 +38,10 @@ body {
   &:active {
     transform: scale(0.98);
   }
+}
+.link {
+  text-decoration: none;
+  color: $darkblue-color;
 }
 .title {
   text-align: center;
