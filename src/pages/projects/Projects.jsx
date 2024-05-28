@@ -7,21 +7,9 @@ import enceladusPic from "/enceladus.png";
 import europaClipperPic from "/europa-clipper.png";
 import shellPic from "/shell.png";
 import ProjectCard from "./ProjectCard";
-import { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 function Projects() {
-  const [isVisibleMyDiv, setIsVisibleMyDiv] = useState(false);
-
-  const [refMyDiv, inViewMyDiv] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
-  useEffect(() => {
-    if (inViewMyDiv) setIsVisibleMyDiv(true);
-  }, [inViewMyDiv]);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -120,12 +108,8 @@ function Projects() {
         <div className="container">
           <h2 className="title">PROJECTS</h2>
           <div className="projects-list">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <ProjectCard
-                className={
-                  index > 0 ? "myDiv" : "" + (isVisibleMyDiv ? " visible" : "")
-                }
-                ref={refMyDiv}
                 key={project.id}
                 projectTitle={project.projectTitle}
                 projectSubtitle={project.projectSubtitle}
