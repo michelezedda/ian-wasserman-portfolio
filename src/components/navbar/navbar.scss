@@ -109,7 +109,7 @@ nav {
 // MEDIA QUERIES //
 @media (max-width: 800px) {
   nav {
-    padding: 0 50px 0 50px;
+    padding: 0;
     display: block;
     width: 100%;
     background-color: $primary-color;
@@ -118,6 +118,7 @@ nav {
     h2 {
       font-size: 40px;
       margin: 0;
+      padding: 0 30px;
       font-weight: 600;
       background: linear-gradient(180deg, #004c94 45%, #297bc4 90%);
       -webkit-background-clip: text;
@@ -132,6 +133,10 @@ nav {
       display: block;
       padding: 15px;
       text-decoration: none;
+      color: $darkblue-color;
+    }
+    a:hover {
+      color: $blue-color;
     }
     img {
       width: 140px;
@@ -141,10 +146,12 @@ nav {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.5s ease-out;
+      margin: 0;
+      padding: 0;
     }
     .menu-icon {
-      top: 37px;
-      width: 60px;
+      top: -45px;
+      width: 200px;
       position: relative;
       float: right;
       cursor: pointer;
@@ -162,7 +169,7 @@ nav {
       border-radius: 999px;
     }
     .nav-icon:before {
-      background: $primary-color;
+      background: $blue-color;
       content: "";
       display: block;
       height: 100%;
@@ -173,7 +180,7 @@ nav {
       border-radius: 999px;
     }
     .nav-icon:after {
-      background: $primary-color;
+      background: $blue-color;
       content: "";
       display: block;
       height: 100%;
