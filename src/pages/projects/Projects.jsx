@@ -17,7 +17,7 @@ function Projects() {
       const scrollPosition = window.scrollY + window.innerHeight;
       const cards = document.querySelectorAll(".project-card");
       cards.forEach((card, index) => {
-        if (scrollPosition > card.offsetTop) {
+        if (scrollPosition > card.offsetTop && index > 0) {
           setVisibleCards((prevVisibleCards) => [...prevVisibleCards, index]);
         }
       });
@@ -133,7 +133,13 @@ function Projects() {
                 projectImg={project.projectImg}
                 projectLink={project.projectLink}
                 projectNotes={project.projectNotes}
-                className={visibleCards.includes(index) ? "visible" : ""}
+                className={
+                  index === 0
+                    ? "always-visible"
+                    : visibleCards.includes(index)
+                    ? "visible"
+                    : ""
+                }
               />
             ))}
           </div>

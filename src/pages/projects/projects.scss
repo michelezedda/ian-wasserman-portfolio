@@ -34,6 +34,10 @@
   background-color: $div-color;
   padding: 20px;
   width: 1000px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+  will-change: opacity, transform;
   h3 {
     color: $darkblue-color;
     text-align: center;
@@ -68,11 +72,10 @@
     font-size: 20px;
   }
 }
-.project-card {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 2s ease, transform 2s ease;
-  will-change: opacity, transform;
+.always-visible {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
 }
 .project-card.visible {
   opacity: 1;
