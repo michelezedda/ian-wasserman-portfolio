@@ -7,9 +7,25 @@ import enceladusPic from "/enceladus.png";
 import europaClipperPic from "/europa-clipper.png";
 import shellPic from "/shell.png";
 import ProjectCard from "./ProjectCard";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Projects() {
+  const [visibleCards, setVisibleCards] = useState([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const cards = document.querySelectorAll(".project-card");
+      cards.forEach((card, index) => {
+        if (scrollPosition > card.offsetTop) {
+          setVisibleCards((prevVisibleCards) => [...prevVisibleCards, index]);
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -108,7 +124,7 @@ function Projects() {
         <div className="container">
           <h2 className="title">PROJECTS</h2>
           <div className="projects-list">
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <ProjectCard
                 key={project.id}
                 projectTitle={project.projectTitle}
@@ -117,6 +133,7 @@ function Projects() {
                 projectImg={project.projectImg}
                 projectLink={project.projectLink}
                 projectNotes={project.projectNotes}
+                className={visibleCards.includes(index) ? "visible" : ""}
               />
             ))}
           </div>

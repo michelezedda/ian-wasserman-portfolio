@@ -8,10 +8,11 @@ function ProjectCard({
   projectLink,
   projectImg,
   projectNotes,
+  className,
 }) {
   return (
     <>
-      <div className="project-card">
+      <div className={`project-card ${className}`}>
         <h3 className="project-name">{projectTitle}</h3>
         <h4 className="project-subtitle">{projectSubtitle}</h4>
         <img src={projectImg} alt={projectTitle} />
