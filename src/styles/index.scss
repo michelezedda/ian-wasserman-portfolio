@@ -75,9 +75,10 @@ body {
     justify-content: center;
     align-items: center;
     border: 3px solid $darkblue-color;
-    border-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     color: $darkblue-color;
-    padding: 10px 100px;
+    padding: 10px 1300px;
     font-size: 22px;
     color: $darkblue-color;
     &:hover {
@@ -95,7 +96,7 @@ body {
   }
   .title {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     background: linear-gradient(180deg, #004c94 45%, #297bc4 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
