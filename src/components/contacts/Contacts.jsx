@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Contacts() {
   return (
     <>
-      <div className="contacts">
+      <div id="contacts">
         <div className="container">
           <div className="social-medias">
             <h3>Connect with me:</h3>

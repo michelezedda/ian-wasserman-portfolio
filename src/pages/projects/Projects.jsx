@@ -8,6 +8,7 @@ import europaClipperPic from "/europa-clipper.png";
 import shellPic from "/shell.png";
 import ProjectCard from "./ProjectCard";
 import { useState, useEffect } from "react";
+import Contacts from "../../components/contacts/Contacts";
 
 function Projects() {
   const [visibleCards, setVisibleCards] = useState([]);
@@ -120,6 +121,7 @@ function Projects() {
         <link rel="canonical" href="https://ianwasserman.netlify.app/" />
       </Helmet>
       <Navbar />
+      <Contacts />
       <div className="projects">
         <div className="container">
           <h2 className="title">PROJECTS</h2>

@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import Contacts from "../../components/contacts/Contacts";
 
 function Education() {
   const [isVisibleEduCard3, setIsVisibleEduCard3] = useState(false);
@@ -55,6 +56,7 @@ function Education() {
         <link rel="canonical" href="https://ianwasserman.netlify.app/" />
       </Helmet>
       <Navbar />
+      <Contacts />
       <div className="education">
         <div className="container">
           <h2 className="title">
