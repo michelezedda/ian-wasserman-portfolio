@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 450px 0 300px;
+  padding: 450px 0 300px 0;
   margin: 0;
   background-color: $primary-color;
   color: $black-color;
@@ -93,4 +93,105 @@
 .edu-card5.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+// MEDIA QUERIES //
+@media screen and (max-width: 800px) {
+  .education {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 0;
+    margin: 0;
+    background-color: $primary-color;
+    color: $black-color;
+    text-align: center;
+    text-align: left;
+    h3 {
+      color: $darkblue-color;
+      text-align: center;
+      font-size: 23px;
+      margin: 10px 0 10px 0;
+    }
+    h4 {
+      color: $darkblue-color;
+      text-align: center;
+      font-size: 23px;
+      font-weight: 400;
+      margin: 10px 0 50px 0;
+    }
+    p {
+      font-size: 22px;
+    }
+    b {
+      color: $blue-color;
+    }
+    .first-education-row {
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      box-shadow: 0 0 10px $darkblue-color;
+      justify-content: space-around;
+      padding: 10px;
+      background-color: darken($div-color, 10%);
+      padding: 20px;
+      border: 2px solid $darkblue-color;
+      .first-education-row-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    .second-education-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .edu-card5 {
+      border: 2px solid $darkblue-color;
+      box-shadow: 0 0 10px $darkblue-color;
+      margin: 50px 0 0 0;
+      background-color: $div-color;
+      text-align: left;
+      padding: 20px 60px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      ul {
+        margin-bottom: 60px;
+      }
+    }
+    .edu-card1,
+    .edu-card2,
+    .edu-card3,
+    .edu-card4 {
+      border: 2px solid $darkblue-color;
+      box-shadow: 0 0 10px $darkblue-color;
+      margin-top: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: $div-color;
+      padding: 20px;
+      width: 470px;
+    }
+  }
+  .edu-card3,
+  .edu-card4 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  .edu-card5 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 4s ease, transform 4s ease;
+  }
+  .edu-card3.visible,
+  .edu-card4.visible,
+  .edu-card5.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

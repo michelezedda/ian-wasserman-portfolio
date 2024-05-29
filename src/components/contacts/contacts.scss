@@ -21,8 +21,8 @@
     display: flex;
     gap: 50px;
     .email {
-      font-size: 25px;
       margin-right: 10px;
+      font-size: 25px;
     }
     .linkedin {
       margin-right: 10px;
@@ -42,7 +42,7 @@
     text-align: center;
     margin: 0;
     padding: 40px 0 50px 0;
-    box-shadow: 0 0 100px $primary-color;
+    box-shadow: 0 0 600px $primary-color;
     h3 {
       font-size: 30px;
       color: $darkblue-color;
