@@ -50,6 +50,18 @@
     justify-content: space-around;
     gap: 20px;
   }
+  .edu-card1,
+  .edu-card2,
+  .edu-card3,
+  .edu-card4 {
+    border: 2px solid $darkblue-color;
+    box-shadow: 0 0 10px $darkblue-color;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: $div-color;
+    padding: 20px;
+    width: 600px;
+  }
   .edu-card5 {
     border: 2px solid $darkblue-color;
     box-shadow: 0 0 10px $darkblue-color;
@@ -62,19 +74,6 @@
     ul {
       margin-bottom: 60px;
     }
-  }
-  .edu-card1,
-  .edu-card2,
-  .edu-card3,
-  .edu-card4 {
-    border: 2px solid $darkblue-color;
-    box-shadow: 0 0 10px $darkblue-color;
-    margin-top: 50px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: $div-color;
-    padding: 20px;
-    width: 600px;
   }
 }
 .edu-card3,
@@ -99,12 +98,11 @@
 @media screen and (max-width: 800px) {
   .education {
     display: flex;
-    flex-direction: column;
     flex-shrink: 0;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0 0 10px 0;
+    padding: 50px 10px 150px 10px;
     margin: 0;
     background-color: $primary-color;
     color: $black-color;
@@ -130,15 +128,18 @@
       color: $blue-color;
     }
     .first-education-row {
+      display: flex;
+      flex-direction: column;
       border-top-right-radius: 20px;
       border-bottom-left-radius: 20px;
       box-shadow: 0 0 10px $darkblue-color;
       justify-content: space-around;
-      padding: 10px;
       background-color: darken($div-color, 10%);
       padding: 20px;
       border: 2px solid $darkblue-color;
+      width: 100%;
       .first-education-row-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -150,19 +151,6 @@
       justify-content: space-around;
       gap: 20px;
     }
-    .edu-card5 {
-      border: 2px solid $darkblue-color;
-      box-shadow: 0 0 10px $darkblue-color;
-      margin: 50px 0 0 0;
-      background-color: $div-color;
-      text-align: left;
-      padding: 20px 60px;
-      border-top-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      ul {
-        margin-bottom: 60px;
-      }
-    }
     .edu-card1,
     .edu-card2,
     .edu-card3,
@@ -170,11 +158,24 @@
       border: 2px solid $darkblue-color;
       box-shadow: 0 0 10px $darkblue-color;
       margin-top: 20px;
-      border-top-right-radius: 20px;
-      border-bottom-left-radius: 20px;
+      border-radius: 20px;
       background-color: $div-color;
       padding: 20px;
-      width: 470px;
+      width: 100%;
+    }
+    .edu-card5 {
+      width: 100%;
+      border: 2px solid $darkblue-color;
+      box-shadow: 0 0 10px $darkblue-color;
+      margin: 50px 0 0 0;
+      background-color: $div-color;
+      text-align: left;
+      padding: 20px 30px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      ul {
+        margin-bottom: 60px;
+      }
     }
   }
   .edu-card3,
