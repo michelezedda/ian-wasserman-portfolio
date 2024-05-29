@@ -20,13 +20,46 @@
   .social-medias {
     display: flex;
     gap: 50px;
-    font-size: 35px;
     .email {
-      margin-right: 10px;
       font-size: 25px;
+      margin-right: 10px;
     }
     .linkedin {
       margin-right: 10px;
+    }
+  }
+}
+
+// MEDIA QUERIES //
+@media (max-width: 800px) {
+  .contacts {
+    background-color: $primary-color;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 40px 0 50px 0;
+    box-shadow: 0 0 100px $primary-color;
+    h3 {
+      font-size: 30px;
+      color: $darkblue-color;
+      margin: 5px 0 0 0;
+      font-weight: 500;
+    }
+    .social-medias {
+      display: grid;
+      gap: 20px;
+      font-size: 5px;
+      .email {
+        margin-right: 10px;
+        font-size: 25px;
+      }
+      .linkedin {
+        margin-right: 10px;
+      }
     }
   }
 }

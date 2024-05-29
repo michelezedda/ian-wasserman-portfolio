@@ -3,8 +3,7 @@
 .header {
   display: flex;
   justify-content: center;
-  padding-top: 220px;
-  padding-bottom: 0;
+  padding: 220px 0 0 0;
   height: 55vh;
   text-align: center;
   color: $primary-color;
@@ -70,4 +69,50 @@
 
 // MEDIA QUERIES //
 @media screen and (max-width: 800px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 220px 10px 0;
+    padding-bottom: 0;
+    height: 55vh;
+    text-align: center;
+    color: $primary-color;
+    .split {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      .left {
+        img {
+          width: 500px;
+          border: 2px solid $primary-color;
+          border-radius: 5px;
+          box-shadow: 0 0 15px lighten($primary-color, 0.9%);
+          animation: shadowGlow 2s infinite linear;
+        }
+      }
+      .right {
+        h2 {
+          margin: 0;
+          font-size: 90px;
+          text-align: center;
+          font-weight: 600;
+          background: linear-gradient(180deg, #319bff 3%, #ffffff 70%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        p {
+          margin: 3px 0 0 0;
+          padding: 0 0 40px 0;
+          font-size: 23px;
+          text-align: justify;
+          font-weight: 200;
+        }
+        b {
+          font-weight: 300;
+        }
+      }
+    }
+  }
 }

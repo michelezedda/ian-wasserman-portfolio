@@ -31,7 +31,8 @@
   margin: 30px;
   box-shadow: 0 0 10px $darkblue-color;
   border: 2px solid $darkblue-color;
-  border-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   background-color: $div-color;
   padding: 20px;
   width: 1000px;
