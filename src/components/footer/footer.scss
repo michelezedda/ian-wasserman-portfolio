@@ -23,7 +23,7 @@ span {
 }
 
 // MEDIA QUERIES //
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   footer {
     padding: 50px 10px 50px 10px;
     display: flex;

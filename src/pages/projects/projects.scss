@@ -66,8 +66,25 @@
     box-shadow: 0 0 10px $darkblue-color;
     margin-bottom: 25px;
   }
-  .btn {
+  .project-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid $darkblue-color;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: $darkblue-color;
     padding: 10px 390px;
+    font-size: 22px;
+    color: $darkblue-color;
+    &:hover {
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      box-shadow: 0 0 10px lighten($blue-color, 10%);
+    }
+    &:active {
+      transform: scale(0.98);
+    }
   }
   .project-notes {
     margin-bottom: 0;
@@ -85,7 +102,7 @@
 }
 
 // MEDIA QUERIES //
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .projects {
     display: flex;
     flex-shrink: 0;
@@ -154,8 +171,25 @@
       box-shadow: 0 0 10px $darkblue-color;
       margin-bottom: 25px;
     }
-    .btn {
+    .project-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid $darkblue-color;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      color: $darkblue-color;
       padding: 10px 80px;
+      font-size: 13px;
+      color: $darkblue-color;
+      &:hover {
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0 0 10px lighten($blue-color, 10%);
+      }
+      &:active {
+        transform: scale(0.98);
+      }
     }
     .project-notes {
       margin-bottom: 0;

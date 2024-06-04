@@ -20,26 +20,6 @@ body {
   max-width: 80rem;
   padding: 0 4rem;
 }
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid $darkblue-color;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  color: $darkblue-color;
-  padding: 10px 20px;
-  font-size: 22px;
-  color: $darkblue-color;
-  &:hover {
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 0 10px lighten($blue-color, 10%);
-  }
-  &:active {
-    transform: scale(0.98);
-  }
-}
 .link {
   text-decoration: none;
   color: $darkblue-color;
@@ -53,7 +33,7 @@ body {
 }
 
 // MEDIA QUERIES //
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   html,
   body {
     font-family: $font-stack;
@@ -69,26 +49,6 @@ body {
     margin: 0 auto;
     max-width: 35rem;
     padding: 0 10px;
-  }
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid $darkblue-color;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    color: $darkblue-color;
-    padding: 10px 1300px;
-    font-size: 22px;
-    color: $darkblue-color;
-    &:hover {
-      cursor: pointer;
-      transition: 0.2s ease-in-out;
-      box-shadow: 0 0 10px lighten($blue-color, 10%);
-    }
-    &:active {
-      transform: scale(0.98);
-    }
   }
   .link {
     text-decoration: none;

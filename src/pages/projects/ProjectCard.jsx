@@ -17,7 +17,7 @@ function ProjectCard({
         <h4 className="project-subtitle">{projectSubtitle}</h4>
         <img src={projectImg} alt={projectTitle} />
         <p className="project-description">{projectDescription}</p>
-        <div className="project-links" className="btn">
+        <div className="project-links" className="project-btn">
           <Link className="link" to={projectLink} target="_blank">
             <a>Go to presentation</a>
           </Link>

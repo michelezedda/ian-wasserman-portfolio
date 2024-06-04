@@ -11,7 +11,7 @@ function Contacts() {
           <div className="social-medias">
             <h3>Connect with me:</h3>
             <Link className="link" to={`mailto:fesfe@gmail.com`}>
-              <div className="btn">
+              <div className="contacts-btn">
                 <TbMail className="email" /> Send an email
               </div>
             </Link>
@@ -20,7 +20,7 @@ function Contacts() {
               to="https://www.linkedin.com/in/ianwass/"
               target="_blank"
             >
-              <div className="btn">
+              <div className="contacts-btn">
                 <FaLinkedinIn className="linkedin" /> Go to Linkedin
               </div>
             </Link>
