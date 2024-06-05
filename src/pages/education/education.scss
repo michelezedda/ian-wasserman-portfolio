@@ -95,7 +95,115 @@
 }
 
 // MEDIA QUERIES //
-@media (max-width: 1250px) {
+@media (max-width: 800px) {
+  .education {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 150px 0;
+    margin: 0;
+    background-color: $primary-color;
+    color: $black-color;
+    text-align: center;
+    text-align: left;
+    h3 {
+      color: $darkblue-color;
+      text-align: center;
+      font-size: 23px;
+      margin: 10px 0 10px 0;
+    }
+    h4 {
+      color: $darkblue-color;
+      text-align: center;
+      font-size: 23px;
+      font-weight: 400;
+      margin: 10px 0 50px 0;
+      padding: 0 10px;
+    }
+    p {
+      font-size: 22px;
+      padding: 20px;
+    }
+    b {
+      color: $blue-color;
+    }
+    .first-education-row {
+      display: flex;
+      flex-direction: column;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      box-shadow: 0 0 10px $darkblue-color;
+      justify-content: space-around;
+      background-color: darken($div-color, 10%);
+      padding: 20px;
+      border: 2px solid $darkblue-color;
+      width: 90%;
+      .first-education-row-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    .second-education-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 0;
+    }
+    .edu-card1,
+    .edu-card2,
+    .edu-card3,
+    .edu-card4 {
+      border: 2px solid $darkblue-color;
+      box-shadow: 0 0 10px $darkblue-color;
+      margin: 20px 0 0 0;
+      border-radius: 20px;
+      padding: 0px;
+      background-color: $div-color;
+      width: 90%;
+    }
+    .edu-card3,
+    .edu-card4 {
+      padding: 0 20px;
+    }
+    .edu-card5 {
+      width: 90%;
+      border: 2px solid $darkblue-color;
+      box-shadow: 0 0 10px $darkblue-color;
+      margin: 20px 0 0 0;
+      background-color: $div-color;
+      text-align: left;
+      padding: 0 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      ul {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .edu-card3,
+  .edu-card4 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  .edu-card5 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 4s ease, transform 4s ease;
+  }
+  .edu-card3.visible,
+  .edu-card4.visible,
+  .edu-card5.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 800.02px) and (max-width: 1250px) {
   .education {
     display: flex;
     flex-shrink: 0;
