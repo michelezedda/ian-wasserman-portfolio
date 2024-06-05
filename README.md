@@ -30,5 +30,5 @@ Ian Wasserman Portfolio - An Engineering Portfolio
 - Vite: A next-generation front-end dev tool, aiming to improve the developer experience of webpack when it comes to developing JavaScript applications.
 
 ## Project Link
-See his personal website by clicking the following link :link: [Ian Wasserman Portfolio](https://ianwasserman.netlify.app) <br/>
+See his personal portfolio website by clicking the following link :link: [Ian Wasserman Portfolio](https://ianwasserman.netlify.app) <br/>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5e21830c-6a08-4689-b179-6122d6ec7a7d/deploy-status)](https://app.netlify.com/sites/ianwasserman/deploys)
