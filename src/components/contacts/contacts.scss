@@ -52,7 +52,7 @@
 
 // MEDIA QUERIES //
 @media (max-width: 800px) {
-  .contacts {
+  #contacts {
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
     padding: 40px 0 50px 0;
     box-shadow: 0 0 600px $primary-color;
     h3 {
-      font-size: 1px;
+      font-size: 30px;
       color: $darkblue-color;
       margin: 5px 0 0 0;
       font-weight: 500;
@@ -73,7 +73,7 @@
     .social-medias {
       display: grid;
       gap: 20px;
-      font-size: 5px;
+      font-size: 15px;
       .contacts-btn {
         display: flex;
         justify-content: center;
@@ -83,7 +83,60 @@
         border-bottom-left-radius: 20px;
         color: $darkblue-color;
         padding: 10px 60px;
-        font-size: 13px;
+        font-size: 23px;
+        color: $darkblue-color;
+        &:hover {
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          box-shadow: 0 0 10px lighten($blue-color, 10%);
+        }
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+      .email {
+        margin-right: 10px;
+        font-size: 25px;
+      }
+      .linkedin {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 800.02px) and (max-width: 870px) {
+  #contacts {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 420px 0 50px 0;
+    box-shadow: 0 0 600px $primary-color;
+    h3 {
+      font-size: 30px;
+      color: $darkblue-color;
+      margin: 5px 0 0 0;
+      font-weight: 500;
+    }
+    .social-medias {
+      display: grid;
+      gap: 20px;
+      font-size: 15px;
+      .contacts-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid $darkblue-color;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        color: $darkblue-color;
+        padding: 10px 60px;
+        font-size: 23px;
         color: $darkblue-color;
         &:hover {
           cursor: pointer;
