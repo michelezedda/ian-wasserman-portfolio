@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 450px 0 300px 0;
+  padding: 50px 0 300px 0;
   margin: 0;
   background-color: $primary-color;
   color: $black-color;
@@ -95,7 +95,7 @@
 }
 
 // MEDIA QUERIES //
-@media (max-width: 800px) {
+@media (max-width: 1250px) {
   .education {
     display: flex;
     flex-shrink: 0;
@@ -120,6 +120,7 @@
       font-size: 23px;
       font-weight: 400;
       margin: 10px 0 50px 0;
+      padding: 0 10px;
     }
     p {
       font-size: 22px;
@@ -136,7 +137,7 @@
       box-shadow: 0 0 10px $darkblue-color;
       justify-content: space-around;
       background-color: darken($div-color, 10%);
-      padding: 20px 0;
+      padding: 20px;
       border: 2px solid $darkblue-color;
       width: 100%;
       .first-education-row-container {
@@ -160,9 +161,13 @@
       box-shadow: 0 0 10px $darkblue-color;
       margin: 20px 0 0 0;
       border-radius: 20px;
+      padding: 0px;
       background-color: $div-color;
-      padding: 0;
       width: 100%;
+    }
+    .edu-card3,
+    .edu-card4 {
+      padding: 0 20px;
     }
     .edu-card5 {
       width: 100%;
@@ -171,7 +176,7 @@
       margin: 20px 0 0 0;
       background-color: $div-color;
       text-align: left;
-      padding: 0;
+      padding: 0 20px;
       border-top-right-radius: 20px;
       border-bottom-left-radius: 20px;
       ul {
