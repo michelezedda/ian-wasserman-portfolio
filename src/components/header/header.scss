@@ -68,7 +68,7 @@
 }
 
 // MEDIA QUERIES //
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .header {
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@
     }
   }
 }
-@media (min-width: 800.02px) and (max-width: 1410px) {
+@media (min-width: 800.02px) and (max-width: 1200px) {
   .header {
     display: flex;
     justify-content: center;
@@ -151,7 +151,99 @@
         p {
           margin: 3px 0 0 0;
           padding: 0 0 40px 0;
-          font-size: 30px;
+          font-size: 23px;
+          text-align: justify;
+          font-weight: 200;
+        }
+        b {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200.02px) and (max-width: 1270px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 220px 0 0 0;
+    height: 55vh;
+    text-align: center;
+    color: $primary-color;
+    .split {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      .left {
+        img {
+          width: 450px;
+          border: 2px solid $primary-color;
+          border-radius: 5px;
+          box-shadow: 0 0 15px lighten($primary-color, 0.9%);
+          animation: shadowGlow 2s infinite linear;
+        }
+      }
+      .right {
+        h2 {
+          margin: 0;
+          font-size: 80px;
+          text-align: center;
+          font-weight: 600;
+          background: linear-gradient(180deg, #319bff 3%, #ffffff 70%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        p {
+          margin: 3px 0 0 0;
+          padding: 0 0 40px 0;
+          font-size: 20px;
+          text-align: justify;
+          font-weight: 200;
+        }
+        b {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1270.02px) and (max-width: 1410px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 220px 0 0 0;
+    height: 55vh;
+    text-align: center;
+    color: $primary-color;
+    .split {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      .left {
+        img {
+          width: 450px;
+          border: 2px solid $primary-color;
+          border-radius: 5px;
+          box-shadow: 0 0 15px lighten($primary-color, 0.9%);
+          animation: shadowGlow 2s infinite linear;
+        }
+      }
+      .right {
+        h2 {
+          margin: 0;
+          font-size: 90px;
+          text-align: center;
+          font-weight: 600;
+          background: linear-gradient(180deg, #319bff 3%, #ffffff 70%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        p {
+          margin: 3px 0 0 0;
+          padding: 0 0 40px 0;
+          font-size: 20px;
           text-align: justify;
           font-weight: 200;
         }
