@@ -88,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 800px 0 200px 0;
+    padding: 1000px 0 0 0;
     .buttons {
       display: flex;
       flex-direction: column;
@@ -160,7 +160,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 800px 0 200px 0;
+    padding: 800px 0 0 0;
     .buttons {
       display: flex;
       flex-direction: column;
@@ -232,7 +232,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 800px 0 200px 0;
+    padding: 800px 0 0 0;
     .buttons {
       display: flex;
       flex-direction: column;
@@ -304,7 +304,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 800px 0 200px 0;
+    padding: 800px 0 0 0;
     .buttons {
       display: flex;
       flex-direction: column;
@@ -376,7 +376,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 950px 0 200px 0;
+    margin: 700px 0 200px 0;
     .buttons {
       display: flex;
       flex-direction: column;
@@ -444,12 +444,85 @@
     transform: translateY(0);
   }
 }
-@media (min-width: 900.02px) and (max-width: 1100px) {
+@media (min-width: 900.02px) and (max-width: 1095px) {
   .more {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 900px 0 200px 0;
+    margin: 750px 0 200px 0;
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      .button1,
+      .button2 {
+        position: relative;
+        text-align: center;
+        border-radius: 5px;
+        margin: 0;
+        padding: 150px 380px;
+        border: 2px solid $primary-color;
+        overflow: hidden;
+        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 0% 35%;
+          transition: filter 0.5s ease;
+          filter: brightness(0.7);
+        }
+        h4 {
+          top: 50%;
+          font-weight: 500;
+          font-size: 60px;
+          backdrop-filter: blur(1px);
+        }
+        p {
+          display: none;
+        }
+        &:hover {
+          transition: 0.2s ease-in-out;
+          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          img {
+            filter: brightness(0.7);
+          }
+          h4 {
+            top: 50%;
+            font-weight: 500;
+            font-size: 60px;
+            backdrop-filter: blur(1px);
+          }
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .button1,
+  .button2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  .button1.visible,
+  .button2.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 1095.02px) and (max-width: 1201px) {
+  .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 800px 0 200px 0;
     .buttons {
       display: flex;
       flex-direction: column;
@@ -517,12 +590,12 @@
     transform: translateY(0);
   }
 }
-@media (min-width: 1100.02px) and (max-width: 1300px) {
+@media (min-width: 1201.02px) and (max-width: 1300px) {
   .more {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 900px 0 200px 0;
+    margin: 50px 0 200px 0;
     .buttons {
       display: flex;
       flex-direction: column;
@@ -595,7 +668,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1000px 0 200px 0;
+    margin: 50px 0 200px 0;
     .buttons {
       display: flex;
       flex-direction: column;
