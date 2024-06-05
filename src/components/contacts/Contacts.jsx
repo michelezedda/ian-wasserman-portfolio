@@ -10,7 +10,7 @@ function Contacts() {
         <div className="container">
           <div className="social-medias">
             <h3>Connect with me:</h3>
-            <Link className="link" to={`mailto:fesfe@gmail.com`}>
+            <Link className="link" to={`mailto:ian@ianwass.com`}>
               <div className="contacts-btn">
                 <TbMail className="email" /> Send an email
               </div>
