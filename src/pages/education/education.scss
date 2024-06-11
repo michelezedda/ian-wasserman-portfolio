@@ -204,7 +204,7 @@
   }
 }
 
-@media (min-width: 800.02px) and (max-width: 1250px) {
+@media (min-width: 800.02px) and (max-width: 1425px) {
   .education {
     display: flex;
     flex-shrink: 0;
@@ -248,7 +248,7 @@
       background-color: darken($div-color, 10%);
       padding: 20px;
       border: 2px solid $darkblue-color;
-      width: 100%;
+      width: 94%;
       .first-education-row-container {
         width: 100%;
         display: flex;
@@ -277,9 +277,10 @@
     .edu-card3,
     .edu-card4 {
       padding: 0 20px;
+      width: 94%;
     }
     .edu-card5 {
-      width: 100%;
+      width: 94%;
       border: 2px solid $darkblue-color;
       box-shadow: 0 0 10px $darkblue-color;
       margin: 20px 0 0 0;
