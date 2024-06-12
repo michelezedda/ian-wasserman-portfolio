@@ -45,7 +45,8 @@ function Education() {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const projectsElement = document.querySelector(".education");
+    projectsElement.scrollIntoView({ behavior: "smooth" });
   }, []);
 
   return (

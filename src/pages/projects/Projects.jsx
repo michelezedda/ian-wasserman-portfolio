@@ -28,7 +28,8 @@ function Projects() {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const projectsElement = document.querySelector(".projects");
+    projectsElement.scrollIntoView({ behavior: "smooth" });
   }, []);
 
   const projects = [
