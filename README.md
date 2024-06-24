@@ -2,6 +2,8 @@
   <br>
   <img src="https://i.ibb.co/g9V3nPM/ianwass.png" alt="Ian Wasserman Logo" width="500">
   <br>
+  Ian Wasserman Portfolio
+  <br>
 </h1>
 
 ## Table of Contents
