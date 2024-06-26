@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <img src="https://i.ibb.co/g9V3nPM/ianwass.png" width="500">
+  <img src="https://i.ibb.co/g9V3nPM/ianwass.png" alt="Ian Wasserman Logo" width="500">
   <br>
   Ian Wasserman Portfolio
   <br>
@@ -10,25 +10,27 @@
 - [Introduction](#introduction)
 - [Sections](#sections)
 - [Technologies Used](#technologies-used)
+- [Project Link](#project-link)
 
 ## Introduction
-Ian Wasserman Portfolio - An Engineering Portfolio
+Ian Wasserman Portfolio is a showcase of his engineering journey, featuring his projects, educational background, and contact information.
 
 ## Sections
-- Homepage: Discover Ian's story in a brief introduction, connect with him directly, and explore is educational journey and projects;
-- Projects page: A collection of his projects with descriptions and clickable links;
-- Education page: Delve into Ian's educational journey, highlighting his academic achievements, courses, and certifications.
+- **Homepage:** Discover Ian's story, connect with him directly, and explore his educational journey and projects.
+- **Projects Page:** View a collection of his projects with detailed descriptions and clickable links.
+- **Education Page:** Dive into Ian's educational journey, highlighting academic achievements, courses, and certifications.
 
 ## Technologies Used
-- HTML5 & CSS3: Markup and styling languages for building web pages;
-- JavaScript: A programming language for adding interactivity to web applications;
-- Sass: CSS extension language for web development efficiency;
-- Git: A version control system for tracking changes and collaborating on projects;
-- GitHub Pages: A platform for hosting and deploying web applications;
-- Node.js: Fast, scalable server-side JavaScript runtime for real-time applications and APIs;
-- React: A JavaScript library for building dynamic user interfaces, known for its component-based approach and efficient rendering;
-- Vite: A next-generation front-end dev tool, aiming to improve the developer experience of webpack when it comes to developing JavaScript applications.
+- **HTML5 & CSS3**: Markup and styling languages for web development.
+- **Sass**: CSS extension language for more efficient styling.
+- **JavaScript**: Programming language for web interactivity.
+- **Git**: Version control system for tracking changes and collaborating.
+- **React**: JavaScript library for dynamic user interfaces.
+- **Vite**: Front-end dev tool improving developer experience.
 
 ## Project Link
-See his personal portfolio website by clicking the following link :link: [Ian Wasserman Portfolio](https://ianwasserman.netlify.app) <br/>
+Explore Ian Wasserman's portfolio: :link: [Ian Wasserman Portfolio](https://ianwass.com)
+
+Explore Ian Wasserman's portfolio (DEMO): :link: [DEMO](https://ianwasserman.netlify.app/)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5e21830c-6a08-4689-b179-6122d6ec7a7d/deploy-status)](https://app.netlify.com/sites/ianwasserman/deploys)
