@@ -31,6 +31,4 @@ Ian Wasserman Portfolio is a showcase of his engineering journey, featuring his 
 ## Project Link
 Explore Ian Wasserman's portfolio: :link: [Ian Wasserman Portfolio](https://ianwass.com)
 
-Explore Ian Wasserman's portfolio (DEMO): :link: [DEMO](https://ianwasserman.netlify.app/)
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5e21830c-6a08-4689-b179-6122d6ec7a7d/deploy-status)](https://app.netlify.com/sites/ianwasserman/deploys)
