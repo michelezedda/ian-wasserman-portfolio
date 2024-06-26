@@ -8,7 +8,7 @@ function Header() {
         <div className="container">
           <div className="split">
             <div className="left">
-              <img src={profilePic} />
+              <img src={profilePic} alt="profile picture" />
             </div>
             <div className="right">
               <h2>ABOUT IAN</h2>
