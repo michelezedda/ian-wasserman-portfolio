@@ -11,7 +11,7 @@ function Header() {
               <img src={profilePic} alt="profile picture" />
             </div>
             <div className="right">
-              <h2>ABOUT IAN</h2>
+              <div className="title">ABOUT IAN</div>
               <p>
                 Ian Wasserman is a graduate from the{" "}
                 <b>Pennsylvania State University</b>. In June of 2020, he began

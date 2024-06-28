@@ -16,7 +16,7 @@
       border-radius: 5px;
       margin: 0 30px;
       padding: 200px 303px;
-      border: 2px solid $primary-color;
+      border: 3px solid $darkblue-color;
       overflow: hidden;
       img {
         position: absolute;
@@ -47,7 +47,7 @@
       }
       &:hover {
         transition: 0.2s ease-in-out;
-        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        box-shadow: 0 0 15px lighten($darkblue-color, 10%);
         img {
           filter: brightness(0.5);
         }
@@ -102,9 +102,9 @@
         border-radius: 5px;
         margin: 0;
         padding: 120px 190px;
-        border: 2px solid $primary-color;
+        border: 3px solid $darkblue-color;
         overflow: hidden;
-        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        box-shadow: 0 0 15px lighten($darkblue-color, 10%);
         img {
           position: absolute;
           top: 0;
@@ -126,7 +126,7 @@
         }
         &:hover {
           transition: 0.2s ease-in-out;
-          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          box-shadow: 0 0 15px lighten($darkblue-color, 10%);
           img {
             filter: brightness(0.7);
           }
@@ -174,9 +174,9 @@
         border-radius: 5px;
         margin: 0;
         padding: 120px 210px;
-        border: 2px solid $primary-color;
+        border: 3px solid $darkblue-color;
         overflow: hidden;
-        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        box-shadow: 0 0 15px lighten($darkblue-color, 10%);
         img {
           position: absolute;
           top: 0;
@@ -198,7 +198,7 @@
         }
         &:hover {
           transition: 0.2s ease-in-out;
-          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          box-shadow: 0 0 15px lighten($darkblue-color, 10%);
           img {
             filter: brightness(0.7);
           }
@@ -246,9 +246,9 @@
         border-radius: 5px;
         margin: 0;
         padding: 120px 235px;
-        border: 2px solid $primary-color;
+        border: 3px solid $darkblue-color;
         overflow: hidden;
-        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        box-shadow: 0 0 15px lighten($darkblue-color, 10%);
         img {
           position: absolute;
           top: 0;
@@ -270,7 +270,7 @@
         }
         &:hover {
           transition: 0.2s ease-in-out;
-          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          box-shadow: 0 0 15px lighten($darkblue-color, 10%);
           img {
             filter: brightness(0.7);
           }
@@ -318,9 +318,9 @@
         border-radius: 5px;
         margin: 0;
         padding: 120px 290px;
-        border: 2px solid $primary-color;
+        border: 3px solid $darkblue-color;
         overflow: hidden;
-        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        box-shadow: 0 0 15px lighten($darkblue-color, 10%);
         img {
           position: absolute;
           top: 0;
@@ -342,7 +342,7 @@
         }
         &:hover {
           transition: 0.2s ease-in-out;
-          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          box-shadow: 0 0 15px lighten($darkblue-color, 10%);
           img {
             filter: brightness(0.7);
           }
@@ -389,10 +389,10 @@
         text-align: center;
         border-radius: 5px;
         margin: 0;
-        padding: 150px 330px;
-        border: 2px solid $primary-color;
+        padding: 150px 300px;
+        border: 3px solid $darkblue-color;
         overflow: hidden;
-        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        box-shadow: 0 0 15px lighten($darkblue-color, 10%);
         img {
           position: absolute;
           top: 0;
@@ -415,7 +415,7 @@
         }
         &:hover {
           transition: 0.2s ease-in-out;
-          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          box-shadow: 0 0 15px lighten($darkblue-color, 10%);
           img {
             filter: brightness(0.7);
           }
@@ -463,9 +463,9 @@
         border-radius: 5px;
         margin: 0;
         padding: 150px 380px;
-        border: 2px solid $primary-color;
+        border: 3px solid $darkblue-color;
         overflow: hidden;
-        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        box-shadow: 0 0 15px lighten($darkblue-color, 10%);
         img {
           position: absolute;
           top: 0;
@@ -488,7 +488,7 @@
         }
         &:hover {
           transition: 0.2s ease-in-out;
-          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          box-shadow: 0 0 15px lighten($darkblue-color, 10%);
           img {
             filter: brightness(0.7);
           }
@@ -535,10 +535,10 @@
         text-align: center;
         border-radius: 5px;
         margin: 0;
-        padding: 150px 430px;
-        border: 2px solid $primary-color;
+        padding: 150px 480px;
+        border: 3px solid $darkblue-color;
         overflow: hidden;
-        box-shadow: 0 0 15px lighten($primary-color, 10%);
+        box-shadow: 0 0 15px lighten($darkblue-color, 10%);
         img {
           position: absolute;
           top: 0;
@@ -561,7 +561,7 @@
         }
         &:hover {
           transition: 0.2s ease-in-out;
-          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          box-shadow: 0 0 15px lighten($darkblue-color, 10%);
           img {
             filter: brightness(0.7);
           }
@@ -607,7 +607,7 @@
         border-radius: 5px;
         margin: 0 30px;
         padding: 180px 230px;
-        border: 2px solid $primary-color;
+        border: 3px solid $darkblue-color;
         overflow: hidden;
         img {
           position: absolute;
@@ -638,7 +638,7 @@
         }
         &:hover {
           transition: 0.2s ease-in-out;
-          box-shadow: 0 0 15px lighten($primary-color, 10%);
+          box-shadow: 0 0 15px lighten($darkblue-color, 10%);
           img {
             filter: brightness(0.5);
           }

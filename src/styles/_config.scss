@@ -2,18 +2,8 @@
 $font-stack: Blinker, sans-serif;
 $black-color: #545454;
 $primary-color: #ffffff;
-$bg-color: linear-gradient(
-  180deg,
-  #f6f9ff 10%,
-  #8da9d7 30%,
-  #4b66a3 50%,
-  #004aad 70%,
-  #002e89 80%,
-  #183478 90%,
-  #1e2f76 95%,
-  #223476
-);
-$bg-color-2: linear-gradient(180deg, #ffffff, #99a7c7 50%, #91a9c9 70%);
+$bg-color: linear-gradient(180deg, #ffffff, #ffffff, #99a7c7 70%, #4b66a3 90%);
+$bg-color-2: linear-gradient(180deg, #ffffff, #99a7c7 70%, #4b66a3 90%);
 $bg-color-mediaquery: linear-gradient(
   180deg,
   #8da9d7 30%,
